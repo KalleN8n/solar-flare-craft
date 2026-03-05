@@ -1,38 +1,55 @@
 import { Linkedin, Facebook } from "lucide-react";
+import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Footer = () => (
-  <footer className="bg-navy border-t border-teal/10 px-6 py-10 md:px-12 lg:px-24">
-    <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-      <div className="flex items-center gap-2">
-        <span className="font-display text-xl font-bold text-primary-foreground">
-          data<span className="text-teal">metrix</span>
-        </span>
-        <span className="text-xs text-muted-foreground">AG</span>
+  <footer className="bg-navy border-t border-teal/10 px-6 py-12 md:px-12 lg:px-24">
+    <div className="max-w-7xl mx-auto">
+      <div className="grid md:grid-cols-4 gap-10 mb-10">
+        <div>
+          <img src={logo} alt="datametrix" className="h-9 mb-4" />
+          <p className="text-xs text-primary-foreground/40 leading-relaxed">
+            Turning scientific data into powerful information since 2003.
+          </p>
+        </div>
+
+        <div>
+          <h4 className="font-display text-sm font-semibold text-primary-foreground mb-4">Services</h4>
+          <div className="flex flex-col gap-2">
+            <Link to="/services/data-intelligence" className="text-xs text-primary-foreground/50 hover:text-teal transition">Data Intelligence</Link>
+            <Link to="/services/biostatistics" className="text-xs text-primary-foreground/50 hover:text-teal transition">Biostatistics</Link>
+            <Link to="/services/data-management" className="text-xs text-primary-foreground/50 hover:text-teal transition">Data Management</Link>
+            <Link to="/services/heor" className="text-xs text-primary-foreground/50 hover:text-teal transition">HEOR</Link>
+          </div>
+        </div>
+
+        <div>
+          <h4 className="font-display text-sm font-semibold text-primary-foreground mb-4">Contact</h4>
+          <div className="flex flex-col gap-2 text-xs text-primary-foreground/50">
+            <p>Faubourg de l'Hôpital 3</p>
+            <p>2000 Neuchâtel, Switzerland</p>
+            <a href="tel:+41325100822" className="hover:text-teal transition">+41 (0)32 510 0822</a>
+            <a href="mailto:info@datametrix.ch" className="hover:text-teal transition">info@datametrix.ch</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 className="font-display text-sm font-semibold text-primary-foreground mb-4">Connect</h4>
+          <div className="flex items-center gap-4">
+            <a href="https://www.linkedin.com/company/datametrix-ag/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-teal transition" aria-label="LinkedIn">
+              <Linkedin size={20} />
+            </a>
+            <a href="https://www.facebook.com/Datametrix-1157790290953801/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-teal transition" aria-label="Facebook">
+              <Facebook size={20} />
+            </a>
+          </div>
+        </div>
       </div>
 
-      <p className="text-xs text-primary-foreground/40 text-center">
-        © {new Date().getFullYear()} datametrix AG. All rights reserved. Neuchâtel, Switzerland.
-      </p>
-
-      <div className="flex items-center gap-4">
-        <a
-          href="https://www.linkedin.com/company/datametrix-ag/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary-foreground/40 hover:text-teal transition"
-          aria-label="LinkedIn"
-        >
-          <Linkedin size={20} />
-        </a>
-        <a
-          href="https://www.facebook.com/Datametrix-1157790290953801/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary-foreground/40 hover:text-teal transition"
-          aria-label="Facebook"
-        >
-          <Facebook size={20} />
-        </a>
+      <div className="border-t border-teal/10 pt-6">
+        <p className="text-xs text-primary-foreground/30 text-center">
+          © {new Date().getFullYear()} datametrix AG. All rights reserved.
+        </p>
       </div>
     </div>
   </footer>
