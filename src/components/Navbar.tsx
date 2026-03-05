@@ -1,9 +1,20 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
-  { label: "Services", href: "#services" },
+  {
+    label: "Services",
+    href: "#services",
+    children: [
+      { label: "Data Intelligence", href: "/services/data-intelligence" },
+      { label: "Biostatistics", href: "/services/biostatistics" },
+      { label: "Data Management", href: "/services/data-management" },
+      { label: "HEOR", href: "/services/heor" },
+    ],
+  },
   { label: "Approach", href: "#approach" },
   { label: "Trust", href: "#trust" },
   { label: "Contact", href: "#contact" },
@@ -11,30 +22,63 @@ const navLinks = [
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-md border-b border-teal/10">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#" className="flex items-center gap-2">
-          <span className="font-display text-2xl font-bold tracking-tight text-primary-foreground">
-            data<span className="text-teal">metrix</span>
-          </span>
-          <span className="hidden sm:block text-xs text-muted-foreground tracking-widest uppercase">
-            turning data into information
-          </span>
-        </a>
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="datametrix - turning data into information" className="h-10" />
+        </Link>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-primary-foreground/70 hover:text-teal transition-colors"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            link.children ? (
+              <div
+                key={link.label}
+                className="relative group"
+                onMouseEnter={() => setServicesOpen(true)}
+                onMouseLeave={() => setServicesOpen(false)}
+              >
+                <a
+                  href={link.href}
+                  className="text-sm font-medium text-primary-foreground/70 hover:text-teal transition-colors"
+                >
+                  {link.label}
+                </a>
+                <AnimatePresence>
+                  {servicesOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 8 }}
+                      transition={{ duration: 0.15 }}
+                      className="absolute top-full left-0 mt-2 w-56 bg-navy-light border border-teal/10 rounded-xl shadow-2xl overflow-hidden"
+                    >
+                      {link.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          to={child.href}
+                          className="block px-5 py-3 text-sm text-primary-foreground/70 hover:text-teal hover:bg-navy/50 transition-colors"
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            ) : (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-sm font-medium text-primary-foreground/70 hover:text-teal transition-colors"
+              >
+                {link.label}
+              </a>
+            )
+          )}
           <a
             href="https://calendly.com/julienmnd/15min"
             target="_blank"
@@ -64,16 +108,34 @@ const Navbar = () => {
             className="md:hidden bg-navy overflow-hidden"
           >
             <div className="px-6 pb-6 flex flex-col gap-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className="text-primary-foreground/70 hover:text-teal transition-colors font-medium"
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                link.children ? (
+                  <div key={link.label} className="flex flex-col gap-2">
+                    <span className="text-primary-foreground/50 text-xs uppercase tracking-wider font-semibold">
+                      {link.label}
+                    </span>
+                    {link.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        to={child.href}
+                        onClick={() => setOpen(false)}
+                        className="text-primary-foreground/70 hover:text-teal transition-colors font-medium pl-3"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className="text-primary-foreground/70 hover:text-teal transition-colors font-medium"
+                  >
+                    {link.label}
+                  </a>
+                )
+              )}
               <a
                 href="https://calendly.com/julienmnd/15min"
                 target="_blank"

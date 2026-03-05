@@ -1,28 +1,33 @@
 import { motion } from "framer-motion";
-import { BarChart3, FlaskConical, Database, HeartPulse } from "lucide-react";
+import { BarChart3, FlaskConical, Database, HeartPulse, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     icon: BarChart3,
     title: "Data Intelligence",
+    href: "/services/data-intelligence",
     description:
       "Transform raw data into actionable insights with advanced analytics, visualization, and reporting solutions tailored to life sciences.",
   },
   {
     icon: FlaskConical,
     title: "Biostatistics",
+    href: "/services/biostatistics",
     description:
       "Rigorous statistical analysis for clinical trials, research studies, and regulatory submissions using industry-standard methodologies.",
   },
   {
     icon: Database,
     title: "Data Management",
+    href: "/services/data-management",
     description:
       "End-to-end clinical data management including database design, data cleaning, coding, and CDISC-compliant deliverables.",
   },
   {
     icon: HeartPulse,
     title: "HEOR",
+    href: "/services/heor",
     description:
       "Health Economics & Outcomes Research to demonstrate the value of treatments through systematic reviews, meta-analyses, and real-world evidence.",
   },
@@ -52,13 +57,20 @@ const ServicesSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="group bg-card rounded-2xl p-8 border border-border hover:border-teal/40 hover:shadow-xl transition-all duration-300"
           >
-            <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center mb-6 group-hover:bg-teal/20 transition">
-              <service.icon className="text-teal" size={24} />
-            </div>
-            <h3 className="font-display text-lg font-semibold text-foreground mb-3">{service.title}</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
+            <Link
+              to={service.href}
+              className="group block bg-card rounded-2xl p-8 border border-border hover:border-teal/40 hover:shadow-xl transition-all duration-300 h-full"
+            >
+              <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center mb-6 group-hover:bg-teal/20 transition">
+                <service.icon className="text-teal" size={24} />
+              </div>
+              <h3 className="font-display text-lg font-semibold text-foreground mb-3">{service.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-4">{service.description}</p>
+              <span className="text-xs text-teal font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                Learn more <ArrowRight size={12} />
+              </span>
+            </Link>
           </motion.div>
         ))}
       </div>
