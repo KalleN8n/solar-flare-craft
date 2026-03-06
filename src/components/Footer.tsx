@@ -5,7 +5,7 @@ import logo from "@/assets/logo.png";
 const Footer = () => (
   <footer className="bg-navy border-t border-teal/10 px-6 py-12 md:px-12 lg:px-24">
     <div className="max-w-7xl mx-auto">
-      <div className="grid md:grid-cols-4 gap-10 mb-10">
+      <div className="grid md:grid-cols-5 gap-10 mb-10">
         <div>
           <img src={logo} alt="datametrix" className="h-9 mb-4" />
           <p className="text-xs text-primary-foreground/40 leading-relaxed">
@@ -20,6 +20,14 @@ const Footer = () => (
             <Link to="/services/biostatistics" className="text-xs text-primary-foreground/50 hover:text-teal transition">Biostatistics</Link>
             <Link to="/services/data-management" className="text-xs text-primary-foreground/50 hover:text-teal transition">Data Management</Link>
             <Link to="/services/heor" className="text-xs text-primary-foreground/50 hover:text-teal transition">HEOR</Link>
+          </div>
+        </div>
+
+        <div>
+          <h4 className="font-display text-sm font-semibold text-primary-foreground mb-4">Who We Are</h4>
+          <div className="flex flex-col gap-2">
+            <Link to="/about" className="text-xs text-primary-foreground/50 hover:text-teal transition">About Us</Link>
+            <Link to="/why-choose-us" className="text-xs text-primary-foreground/50 hover:text-teal transition">Why Choose Us</Link>
           </div>
         </div>
 
