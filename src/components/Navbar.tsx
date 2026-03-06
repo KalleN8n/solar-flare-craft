@@ -6,7 +6,7 @@ import logo from "@/assets/logo.png";
 
 const navLinks = [
   {
-    label: "Services",
+    label: "How We Help You",
     href: "#services",
     children: [
       { label: "Data Intelligence", href: "/services/data-intelligence" },
@@ -15,14 +15,20 @@ const navLinks = [
       { label: "HEOR", href: "/services/heor" },
     ],
   },
-  { label: "Approach", href: "#approach" },
-  { label: "Trust", href: "#trust" },
+  {
+    label: "Who We Are",
+    href: "/about",
+    children: [
+      { label: "About Us", href: "/about" },
+      { label: "Why Choose Us", href: "/why-choose-us" },
+    ],
+  },
   { label: "Contact", href: "#contact" },
 ];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-md border-b border-teal/10">
@@ -38,8 +44,8 @@ const Navbar = () => {
               <div
                 key={link.label}
                 className="relative group"
-                onMouseEnter={() => setServicesOpen(true)}
-                onMouseLeave={() => setServicesOpen(false)}
+                onMouseEnter={() => setOpenDropdown(link.label)}
+                onMouseLeave={() => setOpenDropdown(null)}
               >
                 <a
                   href={link.href}
@@ -48,7 +54,7 @@ const Navbar = () => {
                   {link.label}
                 </a>
                 <AnimatePresence>
-                  {servicesOpen && (
+                  {openDropdown === link.label && (
                     <motion.div
                       initial={{ opacity: 0, y: 8 }}
                       animate={{ opacity: 1, y: 0 }}

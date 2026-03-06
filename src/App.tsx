@@ -8,6 +8,8 @@ import DataIntelligence from "./pages/DataIntelligence";
 import Biostatistics from "./pages/Biostatistics";
 import DataManagement from "./pages/DataManagement";
 import HEOR from "./pages/HEOR";
+import AboutUs from "./pages/AboutUs";
+import WhyChooseUs from "./pages/WhyChooseUs";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +26,8 @@ const App = () => (
           <Route path="/services/biostatistics" element={<Biostatistics />} />
           <Route path="/services/data-management" element={<DataManagement />} />
           <Route path="/services/heor" element={<HEOR />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/why-choose-us" element={<WhyChooseUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
