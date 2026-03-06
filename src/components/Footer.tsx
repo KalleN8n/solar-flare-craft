@@ -27,6 +27,7 @@ const Footer = () => (
           <h4 className="font-display text-sm font-semibold text-primary-foreground mb-4">Who We Are</h4>
           <div className="flex flex-col gap-2">
             <Link to="/about" className="text-xs text-primary-foreground/50 hover:text-teal transition">About Us</Link>
+            <Link to="/team" className="text-xs text-primary-foreground/50 hover:text-teal transition">Our Team</Link>
             <Link to="/why-choose-us" className="text-xs text-primary-foreground/50 hover:text-teal transition">Why Choose Us</Link>
           </div>
         </div>
