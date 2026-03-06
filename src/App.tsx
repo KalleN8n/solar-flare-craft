@@ -9,6 +9,7 @@ import Biostatistics from "./pages/Biostatistics";
 import DataManagement from "./pages/DataManagement";
 import HEOR from "./pages/HEOR";
 import AboutUs from "./pages/AboutUs";
+import OurTeam from "./pages/OurTeam";
 import WhyChooseUs from "./pages/WhyChooseUs";
 import NotFound from "./pages/NotFound";
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/services/data-management" element={<DataManagement />} />
           <Route path="/services/heor" element={<HEOR />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/team" element={<OurTeam />} />
           <Route path="/why-choose-us" element={<WhyChooseUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
