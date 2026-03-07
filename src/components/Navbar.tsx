@@ -6,17 +6,18 @@ import logo from "@/assets/logo.png";
 
 const navLinks = [
   {
-    label: "How We Help You",
+    label: "How we help you",
     href: "#services",
     children: [
       { label: "Data Intelligence", href: "/services/data-intelligence" },
       { label: "Biostatistics", href: "/services/biostatistics" },
       { label: "Data Management", href: "/services/data-management" },
       { label: "HEOR", href: "/services/heor" },
+      { label: "Flexible FSP", href: "/flexible-fsp" },
     ],
   },
   {
-    label: "Who We Are",
+    label: "Who we are",
     href: "/about",
     children: [
       { label: "About Us", href: "/about" },
@@ -24,7 +25,10 @@ const navLinks = [
       { label: "Why Choose Us", href: "/why-choose-us" },
     ],
   },
-  { label: "Contact", href: "#contact" },
+  { label: "Success Stories", href: "/success-stories" },
+  { label: "News", href: "/news" },
+  { label: "Events", href: "/events" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 const Navbar = () => {
@@ -39,7 +43,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) =>
             link.children ? (
               <div
@@ -48,12 +52,9 @@ const Navbar = () => {
                 onMouseEnter={() => setOpenDropdown(link.label)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
-                <a
-                  href={link.href}
-                  className="text-sm font-medium text-primary-foreground/70 hover:text-teal transition-colors"
-                >
+                <span className="text-sm font-medium text-primary-foreground/70 hover:text-teal transition-colors cursor-pointer">
                   {link.label}
-                </a>
+                </span>
                 <AnimatePresence>
                   {openDropdown === link.label && (
                     <motion.div
@@ -77,13 +78,13 @@ const Navbar = () => {
                 </AnimatePresence>
               </div>
             ) : (
-              <a
+              <Link
                 key={link.href}
-                href={link.href}
+                to={link.href}
                 className="text-sm font-medium text-primary-foreground/70 hover:text-teal transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             )
           )}
           <a
@@ -99,7 +100,7 @@ const Navbar = () => {
         {/* Mobile toggle */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-primary-foreground"
+          className="lg:hidden text-primary-foreground"
           aria-label="Toggle menu"
         >
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -112,7 +113,7 @@ const Navbar = () => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="md:hidden bg-navy overflow-hidden"
+            className="lg:hidden bg-navy overflow-hidden"
           >
             <div className="px-6 pb-6 flex flex-col gap-4">
               {navLinks.map((link) =>
@@ -133,14 +134,14 @@ const Navbar = () => {
                     ))}
                   </div>
                 ) : (
-                  <a
+                  <Link
                     key={link.href}
-                    href={link.href}
+                    to={link.href}
                     onClick={() => setOpen(false)}
                     className="text-primary-foreground/70 hover:text-teal transition-colors font-medium"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 )
               )}
               <a
