@@ -8,9 +8,14 @@ import DataIntelligence from "./pages/DataIntelligence";
 import Biostatistics from "./pages/Biostatistics";
 import DataManagement from "./pages/DataManagement";
 import HEOR from "./pages/HEOR";
+import FlexibleFSP from "./pages/FlexibleFSP";
 import AboutUs from "./pages/AboutUs";
 import OurTeam from "./pages/OurTeam";
 import WhyChooseUs from "./pages/WhyChooseUs";
+import SuccessStories from "./pages/SuccessStories";
+import News from "./pages/News";
+import Events from "./pages/Events";
+import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,9 +32,14 @@ const App = () => (
           <Route path="/services/biostatistics" element={<Biostatistics />} />
           <Route path="/services/data-management" element={<DataManagement />} />
           <Route path="/services/heor" element={<HEOR />} />
+          <Route path="/flexible-fsp" element={<FlexibleFSP />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/team" element={<OurTeam />} />
           <Route path="/why-choose-us" element={<WhyChooseUs />} />
+          <Route path="/success-stories" element={<SuccessStories />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/contact" element={<ContactUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
