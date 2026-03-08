@@ -58,34 +58,35 @@ const Insights = () => {
           <h2 className="font-display text-sm uppercase tracking-[0.15em] text-muted-foreground font-semibold mb-8">Featured</h2>
           <div className="grid md:grid-cols-2 gap-6 mb-16">
             {featured.map((item, i) => (
-              <motion.div
-                key={item.slug}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="relative p-8 rounded-2xl bg-navy border border-teal/20 hover:border-teal/40 transition-all group"
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="text-[10px] uppercase tracking-wider font-bold text-teal bg-teal/10 px-2.5 py-1 rounded-full">
-                    {item.type === "white-paper" ? "White Paper" : "Article"}
-                  </span>
-                  <span className="text-xs text-primary-foreground/40">{item.category}</span>
-                </div>
-                <h3 className="font-display text-xl font-semibold text-primary-foreground mb-3 group-hover:text-teal transition-colors">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-primary-foreground/60 leading-relaxed mb-6">{item.excerpt}</p>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-4 text-xs text-primary-foreground/40">
-                    <span>{item.date}</span>
-                    <span className="flex items-center gap-1"><Clock size={12} /> {item.readTime}</span>
+              <Link key={item.slug} to={`/insights/${item.slug}`}>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                  className="relative p-8 rounded-2xl bg-navy border border-teal/20 hover:border-teal/40 transition-all group h-full"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-[10px] uppercase tracking-wider font-bold text-teal bg-teal/10 px-2.5 py-1 rounded-full">
+                      {item.type === "white-paper" ? "White Paper" : "Article"}
+                    </span>
+                    <span className="text-xs text-primary-foreground/40">{item.category}</span>
                   </div>
-                  <span className="text-teal text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                    Read <ArrowRight size={14} />
-                  </span>
-                </div>
-              </motion.div>
+                  <h3 className="font-display text-xl font-semibold text-primary-foreground mb-3 group-hover:text-teal transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-primary-foreground/60 leading-relaxed mb-6">{item.excerpt}</p>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4 text-xs text-primary-foreground/40">
+                      <span>{item.date}</span>
+                      <span className="flex items-center gap-1"><Clock size={12} /> {item.readTime}</span>
+                    </div>
+                    <span className="text-teal text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                      Read <ArrowRight size={14} />
+                    </span>
+                  </div>
+                </motion.div>
+              </Link>
             ))}
           </div>
 
