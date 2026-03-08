@@ -47,7 +47,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy border-b border-teal/10">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-2">
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="datametrix - turning data into information" className="h-16 md:h-20" />
+          <img src={logo} alt="datametrix - turning data into information" className="h-20 md:h-28" />
         </Link>
 
         {/* Desktop */}
