@@ -15,7 +15,7 @@ import WhyChooseUs from "./pages/WhyChooseUs";
 import SuccessStories from "./pages/SuccessStories";
 import SuccessfulProjects from "./pages/SuccessfulProjects";
 import CustomerTestimonials from "./pages/CustomerTestimonials";
-import News from "./pages/News";
+import Insights from "./pages/Insights";
 import Events from "./pages/Events";
 import ContactUs from "./pages/ContactUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -45,7 +45,8 @@ const App = () => (
           <Route path="/success-stories" element={<SuccessStories />} />
           <Route path="/success-stories/successful-projects" element={<SuccessfulProjects />} />
           <Route path="/success-stories/customer-testimonials" element={<CustomerTestimonials />} />
-          <Route path="/news" element={<News />} />
+          <Route path="/insights" element={<Insights />} />
+          <Route path="/news" element={<Insights />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
