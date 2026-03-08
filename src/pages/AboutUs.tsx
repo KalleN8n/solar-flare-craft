@@ -57,7 +57,7 @@ const AboutUs = () => {
               {
                 icon: Eye,
                 title: "Vision",
-                text: "To become the go-to data partner for pharmaceutical and biotech companies by providing high quality, efficient and cost-effective services as alternative to top tier CROs. We appreciate our customers own expertise and add to it our deep knowledge, strong domain experience and advanced data analytics capabilities.",
+                text: "To become the go-to data partner for pharmaceutical and biotech companies by providing high-quality, efficient and cost-effective services as an alternative to top-tier CROs. We appreciate our customers' own expertise and add to it our deep knowledge, strong domain experience and advanced data analytics capabilities.",
               },
               {
                 icon: Heart,
