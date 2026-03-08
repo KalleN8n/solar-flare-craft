@@ -33,7 +33,7 @@ const AdvantageSection = () => (
         className="text-center mb-16"
       >
         <p className="text-sm uppercase tracking-[0.25em] text-teal font-semibold mb-3">
-          Why Boutique Wins
+          Why Choose Us
         </p>
         <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
           The datametrix Advantage
