@@ -34,7 +34,7 @@ const navLinks = [
       { label: "Customer Testimonials", href: "/success-stories/customer-testimonials" },
     ],
   },
-  { label: "News", href: "/news" },
+  { label: "Insights", href: "/insights" },
   { label: "Events", href: "/events" },
   { label: "Contact Us", href: "/contact" },
 ];
