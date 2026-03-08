@@ -220,6 +220,27 @@ const ServicePage = ({
         </div>
       </section>
 
+      {/* Feasibility CTA */}
+      <section className="section-padding bg-muted/50 border-t border-border">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="font-display text-2xl font-bold text-foreground mb-3">
+            Not sure where to start?
+          </h2>
+          <p className="text-muted-foreground mb-6">
+            Book a free 15-minute feasibility chat to explore how we can support your specific protocol and timeline.
+          </p>
+          <a
+            href="https://calendly.com/julienmnd/15min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-solar-orange text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:brightness-110 transition group"
+          >
+            Schedule a Quick Feasibility Chat
+            <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="section-padding bg-navy text-center">
         <div className="max-w-2xl mx-auto">
