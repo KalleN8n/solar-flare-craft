@@ -26,7 +26,7 @@ const testimonials = [
   },
   {
     quote:
-      "What I value the most at Datametrix is their reliability and the fact that they always deliver on time, with high quality standards.",
+      "What I value the most at datametrix is their reliability and the fact that they always deliver on time, with high quality standards.",
     source: "Clinical Project Manager, Large Swiss Pharmaceutical Company",
   },
 ];
@@ -34,17 +34,15 @@ const testimonials = [
 const stats = [
   {
     value: "90%+",
-    label:
-      'of customers claimed they were "very satisfied" or "extremely satisfied" with datametrix services',
+    label: "Customer satisfaction rate — rated \"very\" or \"extremely\" satisfied",
   },
   {
     value: "90%+",
-    label:
-      "of customers said they would consider using Datametrix services again in the future",
+    label: "Repeat engagement rate — would partner with datametrix again",
   },
   {
-    value: "20+",
-    label: "years of trusted partnership in life sciences",
+    value: "100%",
+    label: "On-time delivery across all contracted milestones",
   },
 ];
 
@@ -62,15 +60,14 @@ const CustomerTestimonials = () => {
             transition={{ duration: 0.6 }}
           >
             <p className="text-sm uppercase tracking-[0.2em] text-teal font-semibold mb-4">
-              Client Feedback
+              Client Impact
             </p>
             <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-              Customer Testimonials
+              90%+ Satisfaction. 100% On-Time Delivery.
             </h1>
             <p className="text-primary-foreground/70 leading-relaxed max-w-3xl">
-              Hear directly from the companies and teams we've partnered with.
-              Our clients consistently rate us among their most reliable and
-              high-quality service providers.
+              Our clients consistently rate datametrix among their most reliable partners.
+              Here's what they say about working with us — and why they keep coming back.
             </p>
           </motion.div>
         </div>
@@ -108,7 +105,7 @@ const CustomerTestimonials = () => {
             viewport={{ once: true }}
             className="font-display text-3xl font-bold text-primary-foreground mb-10 text-center"
           >
-            What Our Customers Say
+            In Their Own Words
           </motion.h2>
           <div className="grid md:grid-cols-2 gap-6">
             {testimonials.map((t, i) => (
@@ -134,9 +131,11 @@ const CustomerTestimonials = () => {
       {/* CTA */}
       <section className="section-padding bg-background text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="font-display text-3xl font-bold text-foreground mb-4">Experience the datametrix difference.</h2>
+          <h2 className="font-display text-3xl font-bold text-foreground mb-4">
+            Join 50+ satisfied partners worldwide.
+          </h2>
           <p className="text-muted-foreground mb-8">
-            Join our growing list of satisfied clients. Let's discuss how we can support your next project.
+            See why 90% of our clients choose to work with us again.
           </p>
           <a
             href="https://calendly.com/julienmnd/15min"

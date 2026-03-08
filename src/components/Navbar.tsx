@@ -8,12 +8,13 @@ const navLinks = [
   {
     label: "How we help you",
     href: "#services",
+    mega: true,
     children: [
-      { label: "Data Intelligence", href: "/services/data-intelligence" },
-      { label: "Biostatistics", href: "/services/biostatistics" },
-      { label: "Data Management", href: "/services/data-management" },
-      { label: "HEOR", href: "/services/heor" },
-      { label: "Flexible FSP", href: "/flexible-fsp" },
+      { label: "Data Intelligence", href: "/services/data-intelligence", desc: "AI-driven insights from complex datasets" },
+      { label: "Biostatistics", href: "/services/biostatistics", desc: "Statistical design, analysis & reporting" },
+      { label: "Data Management", href: "/services/data-management", desc: "End-to-end clinical data lifecycle" },
+      { label: "HEOR", href: "/services/heor", desc: "Health economics & outcomes research" },
+      { label: "Flexible FSP", href: "/flexible-fsp", desc: "Adaptive functional service provider model" },
     ],
   },
   {
@@ -69,15 +70,36 @@ const Navbar = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.15 }}
-                      className="absolute top-full left-0 mt-2 w-56 bg-navy-light border border-teal/10 rounded-xl shadow-2xl overflow-hidden"
+                      className={
+                        (link as any).mega
+                          ? "absolute top-full -left-4 mt-2 w-[540px] bg-navy-light border border-teal/10 rounded-xl shadow-2xl overflow-hidden p-2 grid grid-cols-2 gap-1"
+                          : "absolute top-full left-0 mt-2 w-56 bg-navy-light border border-teal/10 rounded-xl shadow-2xl overflow-hidden"
+                      }
                     >
                       {link.children.map((child) => (
                         <Link
                           key={child.href}
                           to={child.href}
-                          className="block px-5 py-3 text-sm text-primary-foreground/70 hover:text-teal hover:bg-navy/50 transition-colors"
+                          className={
+                            (link as any).mega
+                              ? "block px-4 py-3 rounded-lg hover:bg-navy/50 transition-colors group/item"
+                              : "block px-5 py-3 text-sm text-primary-foreground/70 hover:text-teal hover:bg-navy/50 transition-colors"
+                          }
                         >
-                          {child.label}
+                          {(link as any).mega ? (
+                            <>
+                              <span className="text-sm font-medium text-primary-foreground/90 group-hover/item:text-teal transition-colors">
+                                {child.label}
+                              </span>
+                              {(child as any).desc && (
+                                <span className="block text-xs text-primary-foreground/40 mt-0.5">
+                                  {(child as any).desc}
+                                </span>
+                              )}
+                            </>
+                          ) : (
+                            child.label
+                          )}
                         </Link>
                       ))}
                     </motion.div>
