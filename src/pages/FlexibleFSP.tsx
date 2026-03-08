@@ -46,7 +46,7 @@ const FlexibleFSP = () => {
               {
                 icon: Zap,
                 title: "Enhanced productivity",
-                text: "Our Specialized teams are fully trained on customer's SOPs and processes. They can be operational from day one. All Datametrix consultants are experts in their fields and have a proven record as Data Analysts in the life science industry.",
+                text: "Our specialised teams are fully trained on customers' SOPs and processes. They can be operational from day one. All datametrix consultants are experts in their fields and have a proven track record as data analysts in the life science industry.",
               },
               {
                 icon: Clock,
