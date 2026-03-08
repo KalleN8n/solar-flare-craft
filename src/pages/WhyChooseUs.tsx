@@ -3,6 +3,7 @@ import { ArrowRight, MapPin, Shield, Scaling, Coins } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const reasons = [
   {
@@ -53,6 +54,11 @@ const services = [
 const WhyChooseUs = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Why Choose Datametrix AG | CRO Alternative"
+        description="Discover why 90%+ of clients choose Datametrix AG over top-tier CROs — senior expertise, flexible FSP model, and cost-effective solutions."
+        canonical="/why-choose-us"
+      />
       <Navbar />
 
       {/* Hero */}
@@ -92,7 +98,7 @@ const WhyChooseUs = () => {
                   <r.icon className="text-teal" size={22} />
                 </div>
                 <div>
-                  <h3 className="font-display text-lg font-semibold text-foreground mb-2">{r.title}</h3>
+                  <h2 className="font-display text-lg font-semibold text-foreground mb-2">{r.title}</h2>
                   <p className="text-sm text-muted-foreground leading-relaxed">{r.text}</p>
                 </div>
               </motion.div>

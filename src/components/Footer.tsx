@@ -8,22 +8,22 @@ const Footer = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10">
         <div>
           <Link to="/">
-            <img src={logo} alt="datametrix" className="h-9 mb-4" />
+            <img src={logo} alt="Datametrix AG logo — Swiss life sciences data partner" className="h-9 mb-4" loading="lazy" />
           </Link>
           <p className="text-xs text-primary-foreground/40 leading-relaxed">
             Turning scientific data into powerful information since 2003.
           </p>
           <div className="flex items-center gap-4 mt-4">
-            <a href="https://www.linkedin.com/company/datametrix-ag/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-teal transition" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/datametrix-ag/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-teal transition" aria-label="Datametrix AG on LinkedIn">
               <Linkedin size={20} />
             </a>
-            <a href="https://www.facebook.com/Datametrix-1157790290953801/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-teal transition" aria-label="Facebook">
+            <a href="https://www.facebook.com/Datametrix-1157790290953801/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-teal transition" aria-label="Datametrix AG on Facebook">
               <Facebook size={20} />
             </a>
           </div>
         </div>
 
-        <div>
+        <nav aria-label="Services">
           <h4 className="font-display text-sm font-semibold text-primary-foreground mb-4">Services</h4>
           <div className="flex flex-col gap-2">
             <Link to="/services/data-intelligence" className="text-xs text-primary-foreground/50 hover:text-teal transition">Data Intelligence</Link>
@@ -32,9 +32,9 @@ const Footer = () => (
             <Link to="/services/heor" className="text-xs text-primary-foreground/50 hover:text-teal transition">HEOR</Link>
             <Link to="/flexible-fsp" className="text-xs text-primary-foreground/50 hover:text-teal transition">Flexible FSP</Link>
           </div>
-        </div>
+        </nav>
 
-        <div>
+        <nav aria-label="Company">
           <h4 className="font-display text-sm font-semibold text-primary-foreground mb-4">Company</h4>
           <div className="flex flex-col gap-2">
             <Link to="/about" className="text-xs text-primary-foreground/50 hover:text-teal transition">About Us</Link>
@@ -44,17 +44,17 @@ const Footer = () => (
             <Link to="/news" className="text-xs text-primary-foreground/50 hover:text-teal transition">News</Link>
             <Link to="/events" className="text-xs text-primary-foreground/50 hover:text-teal transition">Events</Link>
           </div>
-        </div>
+        </nav>
 
         <div>
           <h4 className="font-display text-sm font-semibold text-primary-foreground mb-4">Contact</h4>
-          <div className="flex flex-col gap-2 text-xs text-primary-foreground/50">
+          <address className="flex flex-col gap-2 text-xs text-primary-foreground/50 not-italic">
             <p>datametrix AG</p>
             <p>Faubourg de l'Hôpital 3</p>
             <p>2000 Neuchâtel, Switzerland</p>
             <a href="tel:+41325100822" className="hover:text-teal transition">+41 (0)32 510 0822</a>
             <a href="mailto:info@datametrix.ch" className="hover:text-teal transition">info@datametrix.ch</a>
-          </div>
+          </address>
         </div>
 
         <div>

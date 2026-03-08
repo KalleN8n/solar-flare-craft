@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -45,7 +46,9 @@ const HeroSection = () => (
         </h1>
 
         <p className="text-lg md:text-xl text-primary-foreground/80 leading-relaxed mb-4 max-w-2xl">
-          Specializing in AI-driven biostatistics, clinical data management, and regulatory-compliant visualizations for the Life Sciences industry.
+          Specializing in{" "}
+          <Link to="/services/data-intelligence" className="text-teal hover:underline">AI-driven biostatistics</Link>,
+          clinical data management, and regulatory-compliant visualizations for the Life Sciences industry.
         </p>
 
         <p className="text-base text-primary-foreground/50 leading-relaxed mb-10 max-w-2xl">

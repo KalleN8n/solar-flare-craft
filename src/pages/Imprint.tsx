@@ -1,10 +1,16 @@
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const Imprint = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Imprint | Datametrix AG"
+        description="Legal imprint for Datametrix AG, registered in Neuchâtel, Switzerland. Company information, contact details, and disclaimer."
+        canonical="/imprint"
+      />
       <Navbar />
 
       <section className="bg-navy pt-32 pb-20 section-padding">
@@ -34,7 +40,6 @@ const Imprint = () => {
                 <p>Switzerland</p>
               </div>
             </div>
-
             <div>
               <h2 className="font-display text-2xl font-bold text-foreground mb-4">Contact</h2>
               <div className="text-muted-foreground leading-relaxed space-y-1">
@@ -43,21 +48,16 @@ const Imprint = () => {
                 <p>Website: <a href="https://www.datametrix.ch" className="text-teal hover:underline" target="_blank" rel="noopener noreferrer">www.datametrix.ch</a></p>
               </div>
             </div>
-
             <div>
               <h2 className="font-display text-2xl font-bold text-foreground mb-4">Commercial Register</h2>
               <p className="text-muted-foreground leading-relaxed">
                 Registered in the Commercial Register of the Canton of Neuchâtel, Switzerland.
               </p>
             </div>
-
             <div>
               <h2 className="font-display text-2xl font-bold text-foreground mb-4">Authorised Representative</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                Ahmed El Rhali, CEO
-              </p>
+              <p className="text-muted-foreground leading-relaxed">Ahmed El Rhali, CEO</p>
             </div>
-
             <div>
               <h2 className="font-display text-2xl font-bold text-foreground mb-4">Disclaimer</h2>
               <p className="text-muted-foreground leading-relaxed">
@@ -67,7 +67,6 @@ const Imprint = () => {
                 This website may contain links to external websites. datametrix AG has no influence over the content of these websites and therefore accepts no liability for them. The respective provider or operator of the linked pages is always responsible for their content.
               </p>
             </div>
-
             <div>
               <h2 className="font-display text-2xl font-bold text-foreground mb-4">Copyright</h2>
               <p className="text-muted-foreground leading-relaxed">

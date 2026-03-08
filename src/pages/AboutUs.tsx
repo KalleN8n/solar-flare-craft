@@ -1,11 +1,18 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Target, Eye, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const AboutUs = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="About Datametrix AG – Swiss Data Partner"
+        description="Founded in 2003, Datametrix AG is a Swiss data analysis company specializing in biostatistics, data management & AI analytics for life sciences."
+        canonical="/about"
+      />
       <Navbar />
 
       {/* Hero */}
@@ -76,7 +83,7 @@ const AboutUs = () => {
                 <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center mb-5">
                   <item.icon className="text-teal" size={22} />
                 </div>
-                <h3 className="font-display text-xl font-semibold text-foreground mb-3">{item.title}</h3>
+                <h2 className="font-display text-xl font-semibold text-foreground mb-3">{item.title}</h2>
                 <p className="text-sm text-muted-foreground leading-relaxed">{item.text}</p>
               </motion.div>
             ))}

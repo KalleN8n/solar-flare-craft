@@ -1,26 +1,31 @@
 import { motion } from "framer-motion";
 import { BrainCircuit, FileCheck, Globe, TrendingUp, ShieldCheck } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const capabilities = [
   {
     icon: BrainCircuit,
     title: "AI & Machine Learning",
     description: "Leverage advanced algorithms for pattern recognition, predictive modeling, and automated data quality checks.",
+    href: "/services/data-intelligence",
   },
   {
     icon: FileCheck,
     title: "CDISC/SDTM Standards",
     description: "End-to-end CDISC compliance including SDTM, ADaM, and define.xml for seamless regulatory submissions.",
+    href: "/services/data-management",
   },
   {
     icon: Globe,
     title: "Real-World Evidence",
     description: "Transform real-world data from EHRs, claims, and registries into robust evidence supporting market access.",
+    href: "/services/heor",
   },
   {
     icon: TrendingUp,
     title: "Predictive Analytics",
     description: "Forecast trial outcomes, optimize patient recruitment, and identify signals earlier with statistical modeling.",
+    href: "/services/biostatistics",
   },
 ];
 
@@ -53,13 +58,17 @@ const CapabilitiesSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="bg-background rounded-2xl p-8 border border-border hover:border-teal/40 hover:shadow-lg transition-all duration-300 group"
           >
-            <div className="w-14 h-14 rounded-xl bg-teal/10 flex items-center justify-center mb-6 group-hover:bg-teal/20 transition">
-              <cap.icon className="text-teal" size={28} />
-            </div>
-            <h3 className="font-display text-lg font-semibold text-foreground mb-3">{cap.title}</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">{cap.description}</p>
+            <Link
+              to={cap.href}
+              className="block bg-background rounded-2xl p-8 border border-border hover:border-teal/40 hover:shadow-lg transition-all duration-300 group h-full"
+            >
+              <div className="w-14 h-14 rounded-xl bg-teal/10 flex items-center justify-center mb-6 group-hover:bg-teal/20 transition">
+                <cap.icon className="text-teal" size={28} />
+              </div>
+              <h3 className="font-display text-lg font-semibold text-foreground mb-3">{cap.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{cap.description}</p>
+            </Link>
           </motion.div>
         ))}
       </div>
