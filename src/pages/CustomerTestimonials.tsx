@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 const testimonials = [
   {
     quote:
-      "I specially appreciate the fact that issues get resolved quickly and smoothly, datametrix has been consistent with the quality and standard of their documentation.",
+      "I especially appreciate the fact that issues get resolved quickly and smoothly. datametrix has been consistent with the quality and standard of their documentation.",
     source: "Clinical Data Manager, Global Pharmaceutical Company",
   },
   {
@@ -16,7 +16,7 @@ const testimonials = [
   },
   {
     quote:
-      "I appreciate very much datametrix very positive work attitude. The team promptly gives their contribution. Worked hard during peak period and overtime when needed.",
+      "I very much appreciate datametrix's positive work attitude. The team promptly gives their contribution. They worked hard during peak periods and overtime when needed.",
     source: "VP Clinical Operations, Large Pharma",
   },
   {
@@ -134,9 +134,9 @@ const CustomerTestimonials = () => {
       {/* CTA */}
       <section className="section-padding bg-background text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="font-display text-3xl font-bold text-foreground mb-4">Let's talk.</h2>
+          <h2 className="font-display text-3xl font-bold text-foreground mb-4">Experience the datametrix difference.</h2>
           <p className="text-muted-foreground mb-8">
-            Discover how datametrix can help you achieve your goals.
+            Join our growing list of satisfied clients. Let's discuss how we can support your next project.
           </p>
           <a
             href="https://calendly.com/julienmnd/15min"

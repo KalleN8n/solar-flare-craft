@@ -79,10 +79,14 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="border-t border-teal/10 pt-6">
-        <p className="text-xs text-primary-foreground/30 text-center">
+      <div className="border-t border-teal/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p className="text-xs text-primary-foreground/30">
           © {new Date().getFullYear()} datametrix AG. All rights reserved.
         </p>
+        <div className="flex items-center gap-4">
+          <Link to="/privacy" className="text-xs text-primary-foreground/30 hover:text-teal transition">Privacy Policy</Link>
+          <Link to="/imprint" className="text-xs text-primary-foreground/30 hover:text-teal transition">Imprint</Link>
+        </div>
       </div>
     </div>
   </footer>

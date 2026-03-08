@@ -18,7 +18,7 @@ const reasons = [
   {
     icon: Scaling,
     title: "Flexibility to Adapt",
-    text: "We demonstrated ability to adapt our proposal, team organization and even the team location to customer needs.",
+    text: "We have demonstrated the ability to adapt our proposals, team organisation, and even team location to customer needs.",
   },
   {
     icon: Coins,
@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
             </h1>
             <p className="text-xl text-teal font-medium mb-4">We offer you a different way forward!</p>
             <p className="text-primary-foreground/70 leading-relaxed max-w-3xl">
-              We do not restrict ourselves to the same tools as every other. We know how to shape our services to your needs! We have a deep domain knowledge and expertise, confirmed by customer satisfaction.
+              We do not restrict ourselves to the same tools as every other provider. We know how to shape our services to your needs. We have deep domain knowledge and expertise, confirmed by consistently high customer satisfaction.
             </p>
           </motion.div>
         </div>

@@ -46,7 +46,7 @@ const FlexibleFSP = () => {
               {
                 icon: Zap,
                 title: "Enhanced productivity",
-                text: "Our Specialized teams are fully trained on customer's SOPs and processes. They can be operational from day one. All Datametrix consultants are experts in their fields and have a proven record as Data Analysts in the life science industry.",
+                text: "Our specialised teams are fully trained on customers' SOPs and processes. They can be operational from day one. All datametrix consultants are experts in their fields and have a proven track record as data analysts in the life science industry.",
               },
               {
                 icon: Clock,
@@ -85,7 +85,7 @@ const FlexibleFSP = () => {
           >
             <h2 className="font-display text-3xl font-bold text-primary-foreground mb-4">What's your need?</h2>
             <p className="text-primary-foreground/70 leading-relaxed mb-6">
-              In the past 18 years, we have worked with all kind of life science organizations – from global players to start up biotechs.
+              In the past 20+ years, we have worked with all kinds of life science organisations – from global players to start-up biotechs.
             </p>
             <p className="text-primary-foreground/70 leading-relaxed mb-6">
               <strong className="text-primary-foreground">We understand your journey</strong>, regardless of the size of your team or company. This means understanding the implications of a growing pipeline, increased size and complexity of your studies, and hence the need to develop internal data standards, high quality processes and procedures. We are committed to partner on these as part as our FSP model.
@@ -145,8 +145,8 @@ const FlexibleFSP = () => {
       {/* CTA */}
       <section className="section-padding bg-navy text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="font-display text-3xl font-bold text-primary-foreground mb-4">Let's talk.</h2>
-          <p className="text-primary-foreground/60 mb-8">We will get back to you within 24 hours.</p>
+          <h2 className="font-display text-3xl font-bold text-primary-foreground mb-4">Get started with Flexible FSP.</h2>
+          <p className="text-primary-foreground/60 mb-8">Tell us about your pipeline and we'll design a model that fits.</p>
           <a
             href="https://calendly.com/julienmnd/15min"
             target="_blank"

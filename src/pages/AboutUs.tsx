@@ -22,7 +22,7 @@ const AboutUs = () => {
             </h1>
             <div className="space-y-4 text-primary-foreground/70 leading-relaxed max-w-3xl">
               <p>
-                Founded in 2003, datametrix is a Swiss data analysis company with a strong heritage in biostatistical analysis and programming, data management and data intelligence. With more than 15 years of experience, we are a well-established alternative to top tier CROs.
+                Founded in 2003, datametrix is a Swiss data analysis company with a strong heritage in biostatistical analysis and programming, data management and data intelligence. With more than 20 years of experience, we are a well-established alternative to top-tier CROs.
               </p>
               <p>
                 We believe in looking beyond the obvious, and take on the challenge of going further than "what's possible". We do not restrict ourselves to "standard approaches", but are constantly exploring new avenues and techniques.
@@ -31,13 +31,13 @@ const AboutUs = () => {
                 We are convinced that high quality services can also be cost-effective. We believe professionalism and expertise are the key for business success and that attention to client's needs is the foundation for long-term partnerships.
               </p>
               <p>
-                We appreciate our customers own expertise and add to it our deep knowledge, strong domain experience and advanced data analytics capabilities. We understand the challenges across the different phases in clinical development. We have extensive knowledge across different therapeutic areas.
+                We appreciate our customers' own expertise and add to it our deep knowledge, strong domain experience and advanced data analytics capabilities. We understand the challenges across the different phases in clinical development. We have extensive knowledge across different therapeutic areas.
               </p>
               <p>
                 We are valued by our customers for our reliability and for delivering high quality results on time.
               </p>
               <p>
-                Over 90% of our customer are satisfied or very satisfied with our services and will consider using datametrix services again in the future.
+                Over 90% of our customers are satisfied or very satisfied with our services and will consider using datametrix services again in the future.
               </p>
             </div>
           </motion.div>
@@ -57,7 +57,7 @@ const AboutUs = () => {
               {
                 icon: Eye,
                 title: "Vision",
-                text: "To become the go-to data partner for pharmaceutical and biotech companies by providing high quality, efficient and cost-effective services as alternative to top tier CROs. We appreciate our customers own expertise and add to it our deep knowledge, strong domain experience and advanced data analytics capabilities.",
+                text: "To become the go-to data partner for pharmaceutical and biotech companies by providing high-quality, efficient and cost-effective services as an alternative to top-tier CROs. We appreciate our customers' own expertise and add to it our deep knowledge, strong domain experience and advanced data analytics capabilities.",
               },
               {
                 icon: Heart,
@@ -117,9 +117,9 @@ const AboutUs = () => {
           <h2 className="font-display text-3xl font-bold text-foreground mb-10 text-center">Customer Testimonials</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              "I specially appreciate the fact that issues get resolved quickly and smoothly, datametrix has been consistent with the quality and standard of their documentation.",
+              "I especially appreciate the fact that issues get resolved quickly and smoothly. datametrix has been consistent with the quality and standard of their documentation.",
               "datametrix is a valuable resource to us. Although we had a lot of ad-hoc requests they delivered all of them as expected.",
-              "I appreciate very much datametrix very positive work attitude. The team promptly gives their contribution. Worked hard during peak period and overtime when needed.",
+              "I very much appreciate datametrix's positive work attitude. The team promptly gives their contribution. They worked hard during peak periods and overtime when needed.",
               "Contributed in different data analysis projects as well as support to ancillary projects from other groups when needed. The whole team showed great willingness to learn and expand on the new statistical aspects and implement them immediately.",
             ].map((quote, i) => (
               <motion.blockquote
@@ -140,8 +140,8 @@ const AboutUs = () => {
       {/* CTA */}
       <section className="section-padding bg-navy text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="font-display text-3xl font-bold text-primary-foreground mb-4">Let's talk.</h2>
-          <p className="text-primary-foreground/60 mb-8">We will get back to you within 24 hours.</p>
+          <h2 className="font-display text-3xl font-bold text-primary-foreground mb-4">Partner with us.</h2>
+          <p className="text-primary-foreground/60 mb-8">Discover what 20+ years of data expertise can do for your organisation.</p>
           <a
             href="https://calendly.com/julienmnd/15min"
             target="_blank"

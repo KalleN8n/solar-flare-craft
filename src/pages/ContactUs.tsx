@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 const offices = [
   {
     country: "Headquarter SWITZERLAND",
-    address: "datametrix AG, Faubourg de l'Hopital 3, 2000 Neuchatel, SWITZERLAND",
+    address: "datametrix AG, Faubourg de l'Hôpital 3, 2000 Neuchâtel, SWITZERLAND",
     phone: "+41 (0)32 511 4575",
   },
   {
@@ -31,7 +31,7 @@ const offices = [
   },
   {
     country: "Sweden",
-    address: "Astra Zeneca BuoVenture Hub, Pepparedsleden 1, 431 50 Mölndal, Sweden",
+    address: "AstraZeneca BioVenture Hub, Pepparedsleden 1, 431 50 Mölndal, Sweden",
     phone: "+46 70 016 25 48",
   },
 ];

@@ -140,7 +140,7 @@ const News = () => {
               ))}
             </ul>
             <p className="text-primary-foreground/60 text-sm italic mb-6">
-              Your need is not listed? <a href="/contact-us" className="text-teal hover:underline">Contact us</a> to see if we can help or recommend one of our partners.
+              Your need is not listed? <a href="/contact" className="text-teal hover:underline">Contact us</a> to see if we can help or recommend one of our partners.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
