@@ -60,9 +60,9 @@ const Events = () => {
           <h2 className="font-display text-3xl font-bold text-primary-foreground mb-10">Past Events</h2>
           <div className="space-y-4">
             {[
-              { title: "DIA Annual Meeting", location: "Various Locations", year: "2023" },
-              { title: "PHUSE EU Connect", location: "Europe", year: "2022" },
-              { title: "SCOPE Summit", location: "USA", year: "2022" },
+              { title: "DIA Annual Meeting", location: "Various Locations", year: "2025" },
+              { title: "PHUSE EU Connect", location: "Europe", year: "2025" },
+              { title: "SCOPE Summit", location: "USA", year: "2025" },
             ].map((event, i) => (
               <motion.div
                 key={event.title}
