@@ -16,6 +16,7 @@ import SuccessStories from "./pages/SuccessStories";
 import SuccessfulProjects from "./pages/SuccessfulProjects";
 import CustomerTestimonials from "./pages/CustomerTestimonials";
 import Insights from "./pages/Insights";
+import InsightArticle from "./pages/InsightArticle";
 import Events from "./pages/Events";
 import ContactUs from "./pages/ContactUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";

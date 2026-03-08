@@ -127,50 +127,58 @@ const Insights = () => {
 
           {/* Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filtered.map((item, i) => (
-              <motion.article
-                key={item.slug}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.05 }}
-                className="p-6 rounded-2xl bg-card border border-border hover:border-teal/30 transition-all group flex flex-col"
-              >
-                <div className="flex items-center gap-2 mb-3">
-                  <span className={`text-[10px] uppercase tracking-wider font-bold px-2 py-0.5 rounded-full ${
-                    item.type === "white-paper"
-                      ? "text-teal bg-teal/10"
-                      : item.type === "news"
-                      ? "text-solar-orange bg-solar-orange/10"
-                      : "text-foreground bg-muted/30"
-                  }`}>
-                    {item.type === "white-paper" ? "White Paper" : item.type === "news" ? "News" : "Article"}
-                  </span>
-                  <span className="text-[10px] text-muted-foreground flex items-center gap-1">
-                    <Tag size={10} /> {item.category}
-                  </span>
-                </div>
-                <h3 className="font-display text-base font-semibold text-foreground mb-2 group-hover:text-teal transition-colors leading-snug">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">{item.excerpt}</p>
-                <div className="flex items-center justify-between mt-auto pt-4 border-t border-border">
-                  <div className="flex items-center gap-3 text-xs text-muted-foreground">
-                    <span>{item.date}</span>
-                    <span className="flex items-center gap-1"><Clock size={11} /> {item.readTime}</span>
-                  </div>
-                  {item.externalLink ? (
-                    <a href={item.externalLink} target="_blank" rel="noopener noreferrer" className="text-teal text-xs font-medium flex items-center gap-1">
-                      <ExternalLink size={12} />
-                    </a>
-                  ) : (
-                    <span className="text-teal text-xs font-medium flex items-center gap-1 group-hover:gap-1.5 transition-all">
-                      Read <ArrowRight size={12} />
-                    </span>
-                  )}
-                </div>
-              </motion.article>
-            ))}
+            {filtered.map((item, i) => {
+              const Wrapper = item.externalLink ? "a" : Link;
+              const wrapperProps = item.externalLink
+                ? { href: item.externalLink, target: "_blank", rel: "noopener noreferrer" }
+                : { to: `/insights/${item.slug}` };
+
+              return (
+                <Wrapper key={item.slug} {...(wrapperProps as any)}>
+                  <motion.article
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.05 }}
+                    className="p-6 rounded-2xl bg-card border border-border hover:border-teal/30 transition-all group flex flex-col h-full"
+                  >
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className={`text-[10px] uppercase tracking-wider font-bold px-2 py-0.5 rounded-full ${
+                        item.type === "white-paper"
+                          ? "text-teal bg-teal/10"
+                          : item.type === "news"
+                          ? "text-solar-orange bg-solar-orange/10"
+                          : "text-foreground bg-muted/30"
+                      }`}>
+                        {item.type === "white-paper" ? "White Paper" : item.type === "news" ? "News" : "Article"}
+                      </span>
+                      <span className="text-[10px] text-muted-foreground flex items-center gap-1">
+                        <Tag size={10} /> {item.category}
+                      </span>
+                    </div>
+                    <h3 className="font-display text-base font-semibold text-foreground mb-2 group-hover:text-teal transition-colors leading-snug">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">{item.excerpt}</p>
+                    <div className="flex items-center justify-between mt-auto pt-4 border-t border-border">
+                      <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                        <span>{item.date}</span>
+                        <span className="flex items-center gap-1"><Clock size={11} /> {item.readTime}</span>
+                      </div>
+                      {item.externalLink ? (
+                        <span className="text-teal text-xs font-medium flex items-center gap-1">
+                          <ExternalLink size={12} />
+                        </span>
+                      ) : (
+                        <span className="text-teal text-xs font-medium flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                          Read <ArrowRight size={12} />
+                        </span>
+                      )}
+                    </div>
+                  </motion.article>
+                </Wrapper>
+              );
+            })}
           </div>
 
           {filtered.length === 0 && (
