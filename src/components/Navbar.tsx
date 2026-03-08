@@ -25,7 +25,14 @@ const navLinks = [
       { label: "Why Choose Us", href: "/why-choose-us" },
     ],
   },
-  { label: "Success Stories", href: "/success-stories" },
+  {
+    label: "Success Stories",
+    href: "/success-stories",
+    children: [
+      { label: "Successful Projects", href: "/success-stories/successful-projects" },
+      { label: "Customer Testimonials", href: "/success-stories/customer-testimonials" },
+    ],
+  },
   { label: "News", href: "/news" },
   { label: "Events", href: "/events" },
   { label: "Contact Us", href: "/contact" },

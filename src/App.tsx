@@ -13,6 +13,8 @@ import AboutUs from "./pages/AboutUs";
 import OurTeam from "./pages/OurTeam";
 import WhyChooseUs from "./pages/WhyChooseUs";
 import SuccessStories from "./pages/SuccessStories";
+import SuccessfulProjects from "./pages/SuccessfulProjects";
+import CustomerTestimonials from "./pages/CustomerTestimonials";
 import News from "./pages/News";
 import Events from "./pages/Events";
 import ContactUs from "./pages/ContactUs";
