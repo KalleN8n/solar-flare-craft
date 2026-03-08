@@ -6,15 +6,15 @@ import logo from "@/assets/logo.png";
 
 const navLinks = [
   {
-    label: "How we help you",
+    label: "Our Expertise",
     href: "#services",
     mega: true,
     children: [
-      { label: "Data Intelligence", href: "/services/data-intelligence", desc: "AI-driven insights from complex datasets" },
-      { label: "Biostatistics", href: "/services/biostatistics", desc: "Statistical design, analysis & reporting" },
-      { label: "Data Management", href: "/services/data-management", desc: "End-to-end clinical data lifecycle" },
-      { label: "HEOR", href: "/services/heor", desc: "Health economics & outcomes research" },
-      { label: "Flexible FSP", href: "/flexible-fsp", desc: "Adaptive functional service provider model" },
+      { label: "Data Intelligence", href: "/services/data-intelligence", desc: "Transform RWE and clinical trial data into regulatory-grade insights with AI" },
+      { label: "Biostatistics", href: "/services/biostatistics", desc: "Phase I–IV statistical design, analysis plans & CDISC-compliant reporting" },
+      { label: "Data Management", href: "/services/data-management", desc: "EDC setup, SDTM/ADaM mapping & end-to-end clinical data governance" },
+      { label: "HEOR", href: "/services/heor", desc: "Payer-ready value dossiers, cost-effectiveness models & market access support" },
+      { label: "Flexible FSP", href: "/flexible-fsp", desc: "Embedded specialist teams that scale with your trial portfolio" },
     ],
   },
   {
