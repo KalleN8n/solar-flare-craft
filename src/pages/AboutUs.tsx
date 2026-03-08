@@ -31,7 +31,7 @@ const AboutUs = () => {
                 We are convinced that high quality services can also be cost-effective. We believe professionalism and expertise are the key for business success and that attention to client's needs is the foundation for long-term partnerships.
               </p>
               <p>
-                We appreciate our customers own expertise and add to it our deep knowledge, strong domain experience and advanced data analytics capabilities. We understand the challenges across the different phases in clinical development. We have extensive knowledge across different therapeutic areas.
+                We appreciate our customers' own expertise and add to it our deep knowledge, strong domain experience and advanced data analytics capabilities. We understand the challenges across the different phases in clinical development. We have extensive knowledge across different therapeutic areas.
               </p>
               <p>
                 We are valued by our customers for our reliability and for delivering high quality results on time.
