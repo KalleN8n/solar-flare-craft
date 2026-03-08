@@ -119,7 +119,7 @@ const AboutUs = () => {
             {[
               "I specially appreciate the fact that issues get resolved quickly and smoothly, datametrix has been consistent with the quality and standard of their documentation.",
               "datametrix is a valuable resource to us. Although we had a lot of ad-hoc requests they delivered all of them as expected.",
-              "I appreciate very much datametrix very positive work attitude. The team promptly gives their contribution. Worked hard during peak period and overtime when needed.",
+              "I very much appreciate datametrix's positive work attitude. The team promptly gives their contribution. They worked hard during peak periods and overtime when needed.",
               "Contributed in different data analysis projects as well as support to ancillary projects from other groups when needed. The whole team showed great willingness to learn and expand on the new statistical aspects and implement them immediately.",
             ].map((quote, i) => (
               <motion.blockquote
