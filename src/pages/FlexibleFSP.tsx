@@ -85,7 +85,7 @@ const FlexibleFSP = () => {
           >
             <h2 className="font-display text-3xl font-bold text-primary-foreground mb-4">What's your need?</h2>
             <p className="text-primary-foreground/70 leading-relaxed mb-6">
-              In the past 18 years, we have worked with all kind of life science organizations – from global players to start up biotechs.
+              In the past 20+ years, we have worked with all kinds of life science organisations – from global players to start-up biotechs.
             </p>
             <p className="text-primary-foreground/70 leading-relaxed mb-6">
               <strong className="text-primary-foreground">We understand your journey</strong>, regardless of the size of your team or company. This means understanding the implications of a growing pipeline, increased size and complexity of your studies, and hence the need to develop internal data standards, high quality processes and procedures. We are committed to partner on these as part as our FSP model.
