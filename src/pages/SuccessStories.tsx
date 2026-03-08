@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 const testimonials = [
   {
-    quote: "I specially appreciate the fact that issues get resolved quickly and smoothly, datametrix has been consistent with the quality and standard of their documentation.",
+    quote: "I especially appreciate the fact that issues get resolved quickly and smoothly. datametrix has been consistent with the quality and standard of their documentation.",
     source: "Clinical Data Manager, Global Pharmaceutical Company",
   },
   {
