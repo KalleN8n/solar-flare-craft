@@ -1,27 +1,31 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center overflow-hidden">
-    {/* Animated gradient background */}
-    <div className="absolute inset-0 bg-navy">
+    {/* Background image */}
+    <div className="absolute inset-0">
+      <img
+        src={heroBg}
+        alt="Abstract data visualization with flowing network nodes representing life sciences analytics"
+        className="w-full h-full object-cover"
+      />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-navy/70" />
+      {/* Animated gradient overlay */}
       <motion.div
-        className="absolute inset-0 opacity-80"
+        className="absolute inset-0 opacity-40"
         animate={{
           background: [
-            "linear-gradient(135deg, hsl(215 50% 10%) 0%, hsl(215 40% 18%) 40%, hsl(25 90% 55% / 0.15) 100%)",
-            "linear-gradient(135deg, hsl(215 40% 18%) 0%, hsl(215 50% 10%) 50%, hsl(30 85% 65% / 0.2) 100%)",
-            "linear-gradient(135deg, hsl(215 50% 10%) 0%, hsl(215 40% 18%) 40%, hsl(25 90% 55% / 0.15) 100%)",
+            "linear-gradient(135deg, hsl(215 50% 10% / 0.6) 0%, transparent 40%, hsl(25 90% 55% / 0.1) 100%)",
+            "linear-gradient(135deg, transparent 0%, hsl(215 50% 10% / 0.4) 50%, hsl(30 85% 65% / 0.15) 100%)",
+            "linear-gradient(135deg, hsl(215 50% 10% / 0.6) 0%, transparent 40%, hsl(25 90% 55% / 0.1) 100%)",
           ],
         }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
       />
-      {/* Subtle particle-like dots */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: "radial-gradient(circle, hsl(175 65% 40%) 1px, transparent 1px)",
-        backgroundSize: "40px 40px",
-      }} />
     </div>
 
     <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-32 pt-40">
