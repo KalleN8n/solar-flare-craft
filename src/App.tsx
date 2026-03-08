@@ -13,6 +13,8 @@ import AboutUs from "./pages/AboutUs";
 import OurTeam from "./pages/OurTeam";
 import WhyChooseUs from "./pages/WhyChooseUs";
 import SuccessStories from "./pages/SuccessStories";
+import SuccessfulProjects from "./pages/SuccessfulProjects";
+import CustomerTestimonials from "./pages/CustomerTestimonials";
 import News from "./pages/News";
 import Events from "./pages/Events";
 import ContactUs from "./pages/ContactUs";
@@ -37,6 +39,8 @@ const App = () => (
           <Route path="/team" element={<OurTeam />} />
           <Route path="/why-choose-us" element={<WhyChooseUs />} />
           <Route path="/success-stories" element={<SuccessStories />} />
+          <Route path="/success-stories/successful-projects" element={<SuccessfulProjects />} />
+          <Route path="/success-stories/customer-testimonials" element={<CustomerTestimonials />} />
           <Route path="/news" element={<News />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<ContactUs />} />
