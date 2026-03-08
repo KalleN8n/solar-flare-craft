@@ -70,7 +70,7 @@ const HeroSection = () => (
             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
           </a>
           <a
-            href="#capabilities"
+            href="#services"
             className="inline-flex items-center gap-2 border border-primary-foreground/30 text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:border-teal hover:text-teal transition backdrop-blur-sm"
           >
             View Our Capabilities
