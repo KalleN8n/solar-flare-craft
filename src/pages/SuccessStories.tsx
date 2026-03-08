@@ -13,7 +13,7 @@ const testimonials = [
     source: "Head of Biostatistics, Swiss Biotech",
   },
   {
-    quote: "I appreciate very much datametrix very positive work attitude. The team promptly gives their contribution. Worked hard during peak period and overtime when needed.",
+    quote: "I very much appreciate datametrix's positive work attitude. The team promptly gives their contribution. They worked hard during peak periods and overtime when needed.",
     source: "VP Clinical Operations, Large Pharma",
   },
   {
