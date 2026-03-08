@@ -41,7 +41,7 @@ const Footer = () => (
             <Link to="/team" className="text-xs text-primary-foreground/50 hover:text-teal transition">Our Team</Link>
             <Link to="/why-choose-us" className="text-xs text-primary-foreground/50 hover:text-teal transition">Why Choose Us</Link>
             <Link to="/success-stories" className="text-xs text-primary-foreground/50 hover:text-teal transition">Success Stories</Link>
-            <Link to="/news" className="text-xs text-primary-foreground/50 hover:text-teal transition">News</Link>
+            <Link to="/insights" className="text-xs text-primary-foreground/50 hover:text-teal transition">Insights</Link>
             <Link to="/events" className="text-xs text-primary-foreground/50 hover:text-teal transition">Events</Link>
           </div>
         </nav>
