@@ -31,7 +31,7 @@ const offices = [
   },
   {
     country: "Sweden",
-    address: "Astra Zeneca BuoVenture Hub, Pepparedsleden 1, 431 50 Mölndal, Sweden",
+    address: "AstraZeneca BioVenture Hub, Pepparedsleden 1, 431 50 Mölndal, Sweden",
     phone: "+46 70 016 25 48",
   },
 ];

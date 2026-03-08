@@ -134,9 +134,9 @@ const CustomerTestimonials = () => {
       {/* CTA */}
       <section className="section-padding bg-background text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="font-display text-3xl font-bold text-foreground mb-4">Let's talk.</h2>
+          <h2 className="font-display text-3xl font-bold text-foreground mb-4">Experience the datametrix difference.</h2>
           <p className="text-muted-foreground mb-8">
-            Discover how datametrix can help you achieve your goals.
+            Join our growing list of satisfied clients. Let's discuss how we can support your next project.
           </p>
           <a
             href="https://calendly.com/julienmnd/15min"

@@ -140,8 +140,8 @@ const AboutUs = () => {
       {/* CTA */}
       <section className="section-padding bg-navy text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="font-display text-3xl font-bold text-primary-foreground mb-4">Let's talk.</h2>
-          <p className="text-primary-foreground/60 mb-8">We will get back to you within 24 hours.</p>
+          <h2 className="font-display text-3xl font-bold text-primary-foreground mb-4">Partner with us.</h2>
+          <p className="text-primary-foreground/60 mb-8">Discover what 20+ years of data expertise can do for your organisation.</p>
           <a
             href="https://calendly.com/julienmnd/15min"
             target="_blank"

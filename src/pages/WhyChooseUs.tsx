@@ -18,7 +18,7 @@ const reasons = [
   {
     icon: Scaling,
     title: "Flexibility to Adapt",
-    text: "We demonstrated ability to adapt our proposal, team organization and even the team location to customer needs.",
+    text: "We have demonstrated the ability to adapt our proposals, team organisation, and even team location to customer needs.",
   },
   {
     icon: Coins,

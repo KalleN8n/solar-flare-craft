@@ -145,8 +145,8 @@ const FlexibleFSP = () => {
       {/* CTA */}
       <section className="section-padding bg-navy text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="font-display text-3xl font-bold text-primary-foreground mb-4">Let's talk.</h2>
-          <p className="text-primary-foreground/60 mb-8">We will get back to you within 24 hours.</p>
+          <h2 className="font-display text-3xl font-bold text-primary-foreground mb-4">Get started with Flexible FSP.</h2>
+          <p className="text-primary-foreground/60 mb-8">Tell us about your pipeline and we'll design a model that fits.</p>
           <a
             href="https://calendly.com/julienmnd/15min"
             target="_blank"
