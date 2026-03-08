@@ -1,12 +1,18 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Users, Globe, Zap, Clock, Download } from "lucide-react";
+import { ArrowRight, Users, Globe, Zap, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const FlexibleFSP = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Flexible FSP Model | Datametrix AG"
+        description="Datametrix's adaptive FSP model delivers focused resources, multiregional support & accelerated timelines for clinical data management."
+        canonical="/flexible-fsp"
+      />
       <Navbar />
 
       {/* Hero */}
@@ -66,7 +72,7 @@ const FlexibleFSP = () => {
                   <item.icon className="text-teal" size={22} />
                 </div>
                 <div>
-                  <h3 className="font-display text-lg font-semibold text-foreground mb-2">{item.title}</h3>
+                  <h2 className="font-display text-lg font-semibold text-foreground mb-2">{item.title}</h2>
                   <p className="text-sm text-muted-foreground leading-relaxed">{item.text}</p>
                 </div>
               </motion.div>

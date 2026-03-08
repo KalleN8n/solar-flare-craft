@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, MapPin, Phone, Mail, Video } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const offices = [
   {
@@ -39,6 +40,11 @@ const offices = [
 const ContactUs = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Contact Datametrix AG | Get in Touch"
+        description="Contact Datametrix AG in Neuchâtel, Switzerland. Offices in USA, EU, Sweden & North Africa. Get a quote for biostatistics & data services."
+        canonical="/contact"
+      />
       <Navbar />
 
       {/* Hero */}
@@ -74,7 +80,7 @@ const ContactUs = () => {
                 <Video className="text-teal" size={22} />
               </div>
               <div>
-                <h3 className="font-display text-xl font-semibold text-foreground mb-3">Webinar</h3>
+                <h2 className="font-display text-xl font-semibold text-foreground mb-3">Webinar</h2>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                   There's no question webinars have become an essential ingredient in today's business world. You've probably been hearing a lot about webinar marketing and communications for some time now, and surely you've attended a number of webinars yourself. Datametrix is offering webinars on different topics to be close to its employees and customers because we believe in sharing expertise areas and knowledge transfer.
                 </p>

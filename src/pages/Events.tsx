@@ -2,10 +2,16 @@ import { motion } from "framer-motion";
 import { ArrowRight, Calendar, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const Events = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Events & Conferences | Datametrix AG"
+        description="Meet the Datametrix AG team at key life sciences events and conferences. Discover how we support clinical data needs."
+        canonical="/events"
+      />
       <Navbar />
 
       {/* Hero */}

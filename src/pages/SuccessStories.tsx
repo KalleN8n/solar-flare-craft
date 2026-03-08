@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Quote, TrendingUp } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const testimonials = [
   {
@@ -35,6 +36,11 @@ const stats = [
 const SuccessStories = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Success Stories | Datametrix AG Results"
+        description="60% faster data processing, 30% cost savings, 90%+ client satisfaction. See measurable outcomes from Datametrix AG partnerships."
+        canonical="/success-stories"
+      />
       <Navbar />
 
       {/* Hero */}

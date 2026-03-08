@@ -8,7 +8,7 @@ const services = [
     title: "Data Intelligence",
     href: "/services/data-intelligence",
     description:
-      "Transform raw data into actionable insights with advanced analytics, visualization, and reporting solutions tailored to life sciences.",
+      "Transform raw data into actionable insights with advanced analytics, AI-driven visualization, and reporting solutions tailored to life sciences.",
   },
   {
     icon: FlaskConical,

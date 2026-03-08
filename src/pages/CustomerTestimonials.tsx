@@ -2,53 +2,45 @@ import { motion } from "framer-motion";
 import { ArrowRight, Quote } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const testimonials = [
   {
-    quote:
-      "I especially appreciate the fact that issues get resolved quickly and smoothly. datametrix has been consistent with the quality and standard of their documentation.",
+    quote: "I especially appreciate the fact that issues get resolved quickly and smoothly. datametrix has been consistent with the quality and standard of their documentation.",
     source: "Clinical Data Manager, Global Pharmaceutical Company",
   },
   {
-    quote:
-      "datametrix is a valuable resource to us. Although we had a lot of ad-hoc requests they delivered all of them as expected.",
+    quote: "datametrix is a valuable resource to us. Although we had a lot of ad-hoc requests they delivered all of them as expected.",
     source: "Head of Biostatistics, Swiss Biotech",
   },
   {
-    quote:
-      "I very much appreciate datametrix's positive work attitude. The team promptly gives their contribution. They worked hard during peak periods and overtime when needed.",
+    quote: "I very much appreciate datametrix's positive work attitude. The team promptly gives their contribution. They worked hard during peak periods and overtime when needed.",
     source: "VP Clinical Operations, Large Pharma",
   },
   {
-    quote:
-      "Contributed in different data analysis projects as well as support to ancillary projects from other groups when needed. The whole team showed great willingness to learn and expand on the new statistical aspects and implement them immediately.",
+    quote: "Contributed in different data analysis projects as well as support to ancillary projects from other groups when needed. The whole team showed great willingness to learn and expand on the new statistical aspects and implement them immediately.",
     source: "Statistical Lead, Global Biopharma",
   },
   {
-    quote:
-      "What I value the most at datametrix is their reliability and the fact that they always deliver on time, with high quality standards.",
+    quote: "What I value the most at datametrix is their reliability and the fact that they always deliver on time, with high quality standards.",
     source: "Clinical Project Manager, Large Swiss Pharmaceutical Company",
   },
 ];
 
 const stats = [
-  {
-    value: "90%+",
-    label: "Customer satisfaction rate — rated \"very\" or \"extremely\" satisfied",
-  },
-  {
-    value: "90%+",
-    label: "Repeat engagement rate — would partner with datametrix again",
-  },
-  {
-    value: "100%",
-    label: "On-time delivery across all contracted milestones",
-  },
+  { value: "90%+", label: "Customer satisfaction rate — rated \"very\" or \"extremely\" satisfied" },
+  { value: "90%+", label: "Repeat engagement rate — would partner with datametrix again" },
+  { value: "100%", label: "On-time delivery across all contracted milestones" },
 ];
 
 const CustomerTestimonials = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Customer Testimonials | Datametrix AG"
+        description="90%+ client satisfaction, 100% on-time delivery. Read testimonials from pharma and biotech leaders who trust Datametrix AG."
+        canonical="/success-stories/customer-testimonials"
+      />
       <Navbar />
 
       {/* Hero */}
@@ -59,9 +51,7 @@ const CustomerTestimonials = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-sm uppercase tracking-[0.2em] text-teal font-semibold mb-4">
-              Client Impact
-            </p>
+            <p className="text-sm uppercase tracking-[0.2em] text-teal font-semibold mb-4">Client Impact</p>
             <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
               90%+ Satisfaction. 100% On-Time Delivery.
             </h1>
@@ -86,9 +76,7 @@ const CustomerTestimonials = () => {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="p-8 rounded-2xl bg-card border border-border text-center"
               >
-                <div className="font-display text-4xl font-bold text-teal mb-3">
-                  {stat.value}
-                </div>
+                <div className="font-display text-4xl font-bold text-teal mb-3">{stat.value}</div>
                 <p className="text-sm text-muted-foreground leading-relaxed">{stat.label}</p>
               </motion.div>
             ))}

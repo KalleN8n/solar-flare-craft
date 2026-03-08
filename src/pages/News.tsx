@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ExternalLink, FileText } from "lucide-react";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const newsItems = [
   {
@@ -49,6 +51,11 @@ const dataNeeds = [
 const News = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="News & Insights | Datametrix AG"
+        description="Stay updated on Datametrix AG partnerships, RWE research, AI analytics developments, and life sciences industry insights."
+        canonical="/news"
+      />
       <Navbar />
 
       {/* Hero */}
@@ -89,9 +96,9 @@ const News = () => {
                   </div>
                   <div className="flex-1">
                     <span className="text-xs text-muted-foreground">Publication date: {item.date}</span>
-                    <h3 className="font-display text-xl font-semibold text-foreground mt-2 mb-3">
+                    <h2 className="font-display text-xl font-semibold text-foreground mt-2 mb-3">
                       {item.title}
-                    </h3>
+                    </h2>
                     <p className="text-sm font-medium text-foreground/80 mb-3">{item.excerpt}</p>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-4">{item.description}</p>
                     <a
@@ -140,7 +147,7 @@ const News = () => {
               ))}
             </ul>
             <p className="text-primary-foreground/60 text-sm italic mb-6">
-              Your need is not listed? <a href="/contact" className="text-teal hover:underline">Contact us</a> to see if we can help or recommend one of our partners.
+              Your need is not listed? <Link to="/contact" className="text-teal hover:underline">Contact us</Link> to see if we can help or recommend one of our partners.
             </p>
             <div className="flex flex-wrap gap-4">
               <a

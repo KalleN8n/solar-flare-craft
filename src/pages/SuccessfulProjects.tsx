@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle, TrendingUp } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const projects = [
   {
@@ -64,6 +65,11 @@ const stats = [
 const SuccessfulProjects = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Successful Projects | Datametrix AG"
+        description="60% faster processing, 30% lower costs, zero audit findings. Explore proven clinical trial and data management results from Datametrix AG."
+        canonical="/success-stories/successful-projects"
+      />
       <Navbar />
 
       {/* Hero */}

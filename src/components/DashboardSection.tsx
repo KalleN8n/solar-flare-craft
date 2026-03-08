@@ -30,7 +30,7 @@ const qualityData = [
 ];
 
 const DashboardSection = () => (
-  <section className="section-padding bg-navy">
+  <section className="section-padding bg-navy" aria-label="Interactive data dashboard demonstrating clinical trial analytics">
     <div className="max-w-7xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -58,6 +58,8 @@ const DashboardSection = () => (
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="bg-navy-light rounded-2xl border border-primary-foreground/10 p-6 md:p-8"
+          role="img"
+          aria-label="Bar chart showing clinical trial enrollment vs target by phase"
         >
           <h3 className="font-display text-lg font-semibold text-primary-foreground mb-1">
             Clinical Trial Enrollment
@@ -92,6 +94,8 @@ const DashboardSection = () => (
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="bg-navy-light rounded-2xl border border-primary-foreground/10 p-6 md:p-8"
+          role="img"
+          aria-label="Line chart showing weekly data quality score trending upward"
         >
           <h3 className="font-display text-lg font-semibold text-primary-foreground mb-1">
             Data Quality Score
