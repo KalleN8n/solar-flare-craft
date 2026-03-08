@@ -37,7 +37,7 @@ const AboutUs = () => {
                 We are valued by our customers for our reliability and for delivering high quality results on time.
               </p>
               <p>
-                Over 90% of our customer are satisfied or very satisfied with our services and will consider using datametrix services again in the future.
+                Over 90% of our customers are satisfied or very satisfied with our services and will consider using datametrix services again in the future.
               </p>
             </div>
           </motion.div>
