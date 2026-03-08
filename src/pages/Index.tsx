@@ -1,11 +1,10 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import CapabilitiesSection from "@/components/CapabilitiesSection";
-import DashboardSection from "@/components/DashboardSection";
-import AdvantageSection from "@/components/AdvantageSection";
 import ServicesSection from "@/components/ServicesSection";
-import ApproachSection from "@/components/ApproachSection";
+import WhyUsSection from "@/components/WhyUsSection";
+import DashboardSection from "@/components/DashboardSection";
 import StatsSection from "@/components/StatsSection";
+import MidPageCTA from "@/components/MidPageCTA";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
@@ -48,12 +47,11 @@ const Index = () => {
       />
       <Navbar />
       <HeroSection />
-      <CapabilitiesSection />
-      <DashboardSection />
-      <AdvantageSection />
       <ServicesSection />
-      <ApproachSection />
+      <WhyUsSection />
+      <DashboardSection />
       <StatsSection />
+      <MidPageCTA />
       <ContactSection />
       <Footer />
     </div>
