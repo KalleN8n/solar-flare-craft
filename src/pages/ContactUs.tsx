@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 const offices = [
   {
     country: "Headquarter SWITZERLAND",
-    address: "datametrix AG, Faubourg de l'Hopital 3, 2000 Neuchatel, SWITZERLAND",
+    address: "datametrix AG, Faubourg de l'Hôpital 3, 2000 Neuchâtel, SWITZERLAND",
     phone: "+41 (0)32 511 4575",
   },
   {
