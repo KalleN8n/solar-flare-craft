@@ -22,7 +22,7 @@ const AboutUs = () => {
             </h1>
             <div className="space-y-4 text-primary-foreground/70 leading-relaxed max-w-3xl">
               <p>
-                Founded in 2003, datametrix is a Swiss data analysis company with a strong heritage in biostatistical analysis and programming, data management and data intelligence. With more than 15 years of experience, we are a well-established alternative to top tier CROs.
+                Founded in 2003, datametrix is a Swiss data analysis company with a strong heritage in biostatistical analysis and programming, data management and data intelligence. With more than 20 years of experience, we are a well-established alternative to top-tier CROs.
               </p>
               <p>
                 We believe in looking beyond the obvious, and take on the challenge of going further than "what's possible". We do not restrict ourselves to "standard approaches", but are constantly exploring new avenues and techniques.
