@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Quote } from "lucide-react";
+import { ArrowRight, Quote, TrendingUp } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -21,15 +21,15 @@ const testimonials = [
     source: "Statistical Lead, Global Biopharma",
   },
   {
-    quote: "What I value the most at Datametrix is their reliability and the fact that they always deliver on time, with high quality standards.",
+    quote: "What I value the most at datametrix is their reliability and the fact that they always deliver on time, with high quality standards.",
     source: "Clinical Project Manager, Large Swiss Pharmaceutical Company",
   },
 ];
 
 const stats = [
-  { value: "90%+", label: "of customers claimed they were \"very satisfied\" or \"extremely satisfied\" with datametrix services" },
-  { value: "90%+", label: "of customers said they would consider using Datametrix services again in the future" },
-  { value: "20+", label: "years of trusted partnership in life sciences" },
+  { value: "60%", label: "Average reduction in data processing time across engagements" },
+  { value: "90%+", label: "Client satisfaction rate — rated \"very\" or \"extremely\" satisfied" },
+  { value: "30%", label: "Cost savings vs. traditional CRO outsourcing models" },
 ];
 
 const SuccessStories = () => {
@@ -45,12 +45,15 @@ const SuccessStories = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-sm uppercase tracking-[0.2em] text-teal font-semibold mb-4">Our Impact</p>
+            <p className="text-sm uppercase tracking-[0.2em] text-teal font-semibold mb-4">
+              Measurable Impact
+            </p>
             <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-              Success Stories
+              60% Faster. 30% Leaner. 90%+ Satisfied.
             </h1>
             <p className="text-primary-foreground/70 leading-relaxed max-w-3xl">
-              Datametrix is proud to be a longtime partner in life science, working with large global biopharmaceutical companies, hospitals, academic research groups and government institutions, as well as cosmetic and medical technology companies.
+              From accelerated trial timelines to significant cost reductions — see the
+              measurable outcomes our partners achieve with datametrix.
             </p>
           </motion.div>
         </div>
@@ -69,6 +72,7 @@ const SuccessStories = () => {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="p-8 rounded-2xl bg-card border border-border text-center"
               >
+                <TrendingUp className="text-teal mx-auto mb-3" size={20} />
                 <div className="font-display text-4xl font-bold text-teal mb-3">{stat.value}</div>
                 <p className="text-sm text-muted-foreground leading-relaxed">{stat.label}</p>
               </motion.div>
@@ -86,7 +90,7 @@ const SuccessStories = () => {
             viewport={{ once: true }}
             className="font-display text-3xl font-bold text-primary-foreground mb-10 text-center"
           >
-            What Our Customers Say
+            In Their Own Words
           </motion.h2>
           <div className="grid md:grid-cols-2 gap-6">
             {testimonials.map((t, i) => (
@@ -112,8 +116,8 @@ const SuccessStories = () => {
       {/* CTA */}
       <section className="section-padding bg-background text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="font-display text-3xl font-bold text-foreground mb-4">Ready to write your own success story?</h2>
-          <p className="text-muted-foreground mb-8">Discover how datametrix can help you achieve your goals.</p>
+          <h2 className="font-display text-3xl font-bold text-foreground mb-4">Ready to see these results for yourself?</h2>
+          <p className="text-muted-foreground mb-8">Discover how datametrix can accelerate your timelines and reduce costs.</p>
           <a
             href="https://calendly.com/julienmnd/15min"
             target="_blank"
