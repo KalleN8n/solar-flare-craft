@@ -62,7 +62,7 @@ const WhyChooseUs = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-navy section-padding">
+      <section className="bg-navy pt-32 pb-20 section-padding">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

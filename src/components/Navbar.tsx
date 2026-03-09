@@ -44,7 +44,6 @@ const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
-    <>
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy border-b border-teal/10">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-2">
         <Link to="/" className="flex items-center">
@@ -187,9 +186,6 @@ const Navbar = () => {
         )}
       </AnimatePresence>
     </nav>
-    {/* Spacer to push content below the fixed navbar */}
-    <div className="h-28 md:h-40" />
-    </>
   );
 };
 
