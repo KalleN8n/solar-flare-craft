@@ -8,7 +8,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10">
         <div>
           <Link to="/">
-            <img src={logo} alt="Datametrix AG logo — Swiss life sciences data partner" className="h-14 mb-4" loading="lazy" />
+            <img src={logo} alt="Datametrix AG logo — Swiss life sciences data partner" className="h-20 mb-4" loading="lazy" />
           </Link>
           <p className="text-xs text-primary-foreground/40 leading-relaxed">
             Turning scientific data into powerful information since 2003.
