@@ -186,6 +186,9 @@ const Navbar = () => {
         )}
       </AnimatePresence>
     </nav>
+    {/* Spacer to push content below the fixed navbar */}
+    <div className="h-28 md:h-40" />
+    </>
   );
 };
 
