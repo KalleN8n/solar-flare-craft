@@ -38,7 +38,7 @@ const Insights = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-navy pt-48 pb-20 section-padding">
+      <section className="bg-navy section-padding">
         <div className="max-w-5xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-sm uppercase tracking-[0.2em] text-teal font-semibold mb-4">Knowledge Hub</p>
