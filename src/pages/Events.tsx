@@ -100,7 +100,7 @@ const Events = () => {
           <h2 className="font-display text-3xl font-bold text-foreground mb-4">Want to meet us?</h2>
           <p className="text-muted-foreground mb-8">Book a call and let's discuss your data challenges.</p>
           <a
-            href="https://calendly.com/julienmnd/15min"
+            href="https://calendly.com/datametrixag/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-teal text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:brightness-110 transition group"

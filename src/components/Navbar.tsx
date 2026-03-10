@@ -174,7 +174,7 @@ href="https://calendly.com/datametrixag/30min"
                 )
               )}
               <a
-                href="https://calendly.com/julienmnd/15min"
+                href="https://calendly.com/datametrixag/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-teal text-accent-foreground px-5 py-2.5 rounded-lg text-sm font-semibold text-center hover:brightness-110 transition"

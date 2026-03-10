@@ -160,7 +160,7 @@ const WhyChooseUs = () => {
               To help our customers save time, enhance productivity and improve cost-effectiveness we also offer all our analytical services via datametrix adaptive, value-based FSP model.
             </p>
             <a
-              href="https://calendly.com/julienmnd/15min"
+              href="https://calendly.com/datametrixag/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-teal text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:brightness-110 transition group"

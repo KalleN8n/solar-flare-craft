@@ -138,7 +138,7 @@ const OurTeam = () => {
           <h2 className="font-display text-3xl font-bold text-primary-foreground mb-4">Want to join our team?</h2>
           <p className="text-primary-foreground/60 mb-8">We're always looking for talented data professionals. Reach out to us.</p>
           <a
-            href="https://calendly.com/julienmnd/15min"
+            href="https://calendly.com/datametrixag/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-teal text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:brightness-110 transition group"

@@ -154,7 +154,7 @@ href="https://calendly.com/datametrixag/30min"
           <h2 className="font-display text-3xl font-bold text-primary-foreground mb-4">Get started with Flexible FSP.</h2>
           <p className="text-primary-foreground/60 mb-8">Tell us about your pipeline and we'll design a model that fits.</p>
           <a
-            href="https://calendly.com/julienmnd/15min"
+            href="https://calendly.com/datametrixag/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-teal text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:brightness-110 transition group"

@@ -126,7 +126,7 @@ const CustomerTestimonials = () => {
             See why 90% of our clients choose to work with us again.
           </p>
           <a
-            href="https://calendly.com/julienmnd/15min"
+            href="https://calendly.com/datametrixag/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-teal text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:brightness-110 transition group"
