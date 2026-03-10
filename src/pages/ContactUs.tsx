@@ -11,6 +11,11 @@ const offices = [
     phone: "+41 (0)32 511 4575",
   },
   {
+    country: "Sweden",
+    address: "AstraZeneca BioVenture Hub, Pepparedsleden 1, 431 50 Mölndal, Sweden",
+    phone: "+46 70 016 25 48",
+  },
+  {
     country: "TUNISIA",
     address: "datametrix Tunisia, «Lake Forum» à la cité les Pins lot 3.1.8 les berges du Lac 2, Tunis, TUNISIA",
     phone: "(+216) 71 267 676",
@@ -19,11 +24,6 @@ const offices = [
     country: "FRANCE",
     address: "datametrix France, 37 Boulevard Alfred Wallach, 68100, Mulhouse, France",
     phone: "+33 (0)3 69 198 722",
-  },
-  {
-    country: "Sweden",
-    address: "AstraZeneca BioVenture Hub, Pepparedsleden 1, 431 50 Mölndal, Sweden",
-    phone: "+46 70 016 25 48",
   },
 ];
 
