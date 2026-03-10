@@ -150,7 +150,7 @@ const AboutUs = () => {
           <h2 className="font-display text-3xl font-bold text-primary-foreground mb-4">Partner with us.</h2>
           <p className="text-primary-foreground/60 mb-8">Discover what 20+ years of data expertise can do for your organisation.</p>
           <a
-            href="https://calendly.com/julienmnd/15min"
+            href="https://calendly.com/datametrixag/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-teal text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:brightness-110 transition group"

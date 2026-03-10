@@ -62,7 +62,7 @@ const Footer = () => (
           <div className="flex flex-col gap-2">
             <Link to="/contact" className="text-xs text-primary-foreground/50 hover:text-teal transition">Contact Us</Link>
             <a
-              href="https://calendly.com/julienmnd/15min"
+              href="https://calendly.com/datametrixag/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs text-primary-foreground/50 hover:text-teal transition"
