@@ -11,19 +11,9 @@ const offices = [
     phone: "+41 (0)32 511 4575",
   },
   {
-    country: "USA",
-    address: "datametrix INC, Bear Tavern Road, 830, 08628 West Trenton, New Jersey, USA",
-    phone: "+1(812) 345 60 40",
-  },
-  {
     country: "TUNISIA",
     address: "datametrix Tunisia, «Lake Forum» à la cité les Pins lot 3.1.8 les berges du Lac 2, Tunis, TUNISIA",
     phone: "(+216) 71 267 676",
-  },
-  {
-    country: "MOROCCO",
-    address: "datametrix Morocco, 20 Rue Auguelmare Sidi Ali Agdal 3, 10090 Rabat, Morocco",
-    phone: "+(212) 537 68 35 25",
   },
   {
     country: "FRANCE",
