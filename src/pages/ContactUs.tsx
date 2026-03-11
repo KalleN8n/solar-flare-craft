@@ -134,7 +134,7 @@ const ContactUs = () => {
             viewport={{ once: true }}
             className="text-center mb-14"
           >
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground">
               Our Offices
             </h2>
           </motion.div>
