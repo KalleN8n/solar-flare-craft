@@ -139,7 +139,7 @@ const ContactUs = () => {
             </h2>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {offices.map((office, i) => (
               <motion.div
                 key={office.country}
@@ -147,39 +147,33 @@ const ContactUs = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="group relative bg-card rounded-2xl border border-border hover:border-teal/30 transition-all hover:shadow-lg hover:shadow-teal/5 overflow-hidden"
+                className="group relative bg-navy rounded-2xl border border-teal/10 hover:border-teal/30 transition-all hover:shadow-xl hover:shadow-teal/5 p-7"
               >
-                {/* Top accent bar */}
-                <div className={`h-1 w-full ${i === 0 ? 'bg-teal' : 'bg-border group-hover:bg-teal/50 transition-colors'}`} />
-
-                <div className="p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="text-2xl">{office.flag}</span>
-                    <div>
-                      <h3 className="font-display text-sm font-bold text-foreground leading-tight">
-                        {office.country === "Headquarter SWITZERLAND" ? "Switzerland" : office.country}
-                      </h3>
-                      {office.country === "Headquarter SWITZERLAND" && (
-                        <span className="text-[10px] uppercase tracking-wider text-teal font-semibold">Headquarters</span>
-                      )}
-                      <p className="text-xs text-muted-foreground">{office.city}</p>
-                    </div>
+                <div className="flex items-center gap-3 mb-5">
+                  <span className="text-3xl">{office.flag}</span>
+                  <div>
+                    <h3 className="font-display text-base font-bold text-primary-foreground leading-tight">
+                      {office.country === "Headquarter SWITZERLAND" ? "Switzerland" : office.country}
+                    </h3>
+                    {office.country === "Headquarter SWITZERLAND" && (
+                      <span className="text-[11px] uppercase tracking-wider text-teal font-semibold">Headquarters</span>
+                    )}
                   </div>
+                </div>
 
-                  <div className="space-y-3 pt-3 border-t border-border">
-                    <div className="flex items-start gap-2.5">
-                      <MapPin className="text-muted-foreground/60 mt-0.5 shrink-0" size={13} />
-                      <p className="text-xs text-muted-foreground leading-relaxed">{office.address}</p>
-                    </div>
-                    <div className="flex items-center gap-2.5">
-                      <Phone className="text-muted-foreground/60 shrink-0" size={13} />
-                      <a
-                        href={`tel:${office.phone.replace(/\s/g, '')}`}
-                        className="text-xs text-muted-foreground hover:text-teal transition font-medium"
-                      >
-                        {office.phone}
-                      </a>
-                    </div>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="text-teal mt-0.5 shrink-0" size={15} />
+                    <p className="text-sm text-primary-foreground/60 leading-relaxed">{office.address}</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Phone className="text-teal shrink-0" size={15} />
+                    <a
+                      href={`tel:${office.phone.replace(/\s/g, '')}`}
+                      className="text-sm text-primary-foreground/60 hover:text-teal transition font-medium"
+                    >
+                      {office.phone}
+                    </a>
                   </div>
                 </div>
               </motion.div>
