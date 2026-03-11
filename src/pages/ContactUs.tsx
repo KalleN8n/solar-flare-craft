@@ -134,10 +134,6 @@ const ContactUs = () => {
             viewport={{ once: true }}
             className="text-center mb-14"
           >
-            <div className="inline-flex items-center gap-2 bg-teal/10 text-teal text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-              <Globe size={14} />
-              Global Presence
-            </div>
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
               Our Offices
             </h2>
