@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, MapPin, Phone, Mail, Video, Globe, Calendar } from "lucide-react";
+import { ArrowRight, MapPin, Phone, Mail, Video, Calendar } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
