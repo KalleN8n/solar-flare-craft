@@ -52,7 +52,7 @@ const ContactUs = () => {
         <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full bg-solar-orange/5 blur-[100px] translate-y-1/2 -translate-x-1/4" />
 
         <div className="max-w-6xl mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
