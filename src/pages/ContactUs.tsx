@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, MapPin, Phone, Mail, Video } from "lucide-react";
+import { ArrowRight, MapPin, Phone, Mail, Video, Globe, Calendar } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
@@ -7,23 +7,31 @@ import SEOHead from "@/components/SEOHead";
 const offices = [
   {
     country: "Headquarter SWITZERLAND",
-    address: "datametrix AG, Faubourg de l'Hôpital 3, 2000 Neuchâtel, SWITZERLAND",
+    city: "Neuchâtel",
+    address: "datametrix AG, Faubourg de l'Hôpital 3, 2000 Neuchâtel",
     phone: "+41 (0)32 511 4575",
+    flag: "🇨🇭",
   },
   {
     country: "Sweden",
-    address: "AstraZeneca BioVenture Hub, Pepparedsleden 1, 431 50 Mölndal, Sweden",
+    city: "Mölndal",
+    address: "AstraZeneca BioVenture Hub, Pepparedsleden 1, 431 50 Mölndal",
     phone: "+46 70 016 25 48",
+    flag: "🇸🇪",
   },
   {
-    country: "TUNISIA",
-    address: "datametrix Tunisia, «Lake Forum» à la cité les Pins lot 3.1.8 les berges du Lac 2, Tunis, TUNISIA",
+    country: "Tunisia",
+    city: "Tunis",
+    address: "«Lake Forum» à la cité les Pins lot 3.1.8 les berges du Lac 2",
     phone: "(+216) 71 267 676",
+    flag: "🇹🇳",
   },
   {
-    country: "FRANCE",
-    address: "datametrix France, 37 Boulevard Alfred Wallach, 68100, Mulhouse, France",
+    country: "France",
+    city: "Mulhouse",
+    address: "37 Boulevard Alfred Wallach, 68100, Mulhouse",
     phone: "+33 (0)3 69 198 722",
+    flag: "🇫🇷",
   },
 ];
 
@@ -32,94 +40,150 @@ const ContactUs = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Contact Datametrix AG | Get in Touch"
-        description="Contact Datametrix AG in Neuchâtel, Switzerland. Offices in USA, EU, Sweden & North Africa. Get a quote for biostatistics & data services."
+        description="Contact Datametrix AG in Neuchâtel, Switzerland. Offices in EU, Sweden & North Africa. Get a quote for biostatistics & data services."
         canonical="/contact"
       />
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-navy pt-32 pb-20 section-padding">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <p className="text-sm uppercase tracking-[0.2em] text-teal font-semibold mb-4">Get in Touch</p>
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-              Contact Us
-            </h1>
-            <p className="text-primary-foreground/70 leading-relaxed max-w-3xl">
-              To find out more information about our services, or to ask for service quotation, please send us an e-mail to info@datametrix.ch or contact one of our offices on the details below. A member of our team will be happy to assist you.
-            </p>
-          </motion.div>
-        </div>
-      </section>
+      <section className="bg-navy pt-32 pb-24 section-padding relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-teal/5 blur-[120px] -translate-y-1/2 translate-x-1/4" />
+        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full bg-solar-orange/5 blur-[100px] translate-y-1/2 -translate-x-1/4" />
 
-      {/* Webinar */}
-      <section className="section-padding bg-background">
-        <div className="max-w-5xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="p-8 rounded-2xl bg-card border border-border"
-          >
-            <div className="flex items-start gap-5">
-              <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center shrink-0">
-                <Video className="text-teal" size={22} />
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <p className="text-sm uppercase tracking-[0.2em] text-teal font-semibold mb-4">Get in Touch</p>
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
+                Let's Start a<br />
+                <span className="text-teal">Conversation</span>
+              </h1>
+              <p className="text-primary-foreground/60 leading-relaxed text-lg max-w-lg">
+                Whether you need a service quotation or want to learn more about our capabilities, our team is ready to help.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="space-y-4"
+            >
+              {/* Quick contact cards */}
+              <div className="bg-navy-light/80 backdrop-blur-sm rounded-2xl p-6 border border-teal/10 hover:border-teal/25 transition-colors">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center shrink-0">
+                    <Mail className="text-teal" size={20} />
+                  </div>
+                  <div>
+                    <p className="text-primary-foreground/40 text-xs uppercase tracking-wider mb-1">Email Us</p>
+                    <a href="mailto:info@datametrix.ch" className="text-primary-foreground font-medium hover:text-teal transition">
+                      info@datametrix.ch
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div>
-                <h2 className="font-display text-xl font-semibold text-foreground mb-3">Webinar</h2>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                  There's no question webinars have become an essential ingredient in today's business world. You've probably been hearing a lot about webinar marketing and communications for some time now, and surely you've attended a number of webinars yourself. Datametrix is offering webinars on different topics to be close to its employees and customers because we believe in sharing expertise areas and knowledge transfer.
-                </p>
-                <a
-                  href="mailto:info@datametrix.ch?subject=Webinar%20Subscription"
-                  className="text-sm text-teal inline-flex items-center gap-1 hover:gap-2 transition-all font-medium"
-                >
-                  Subscribe to join our next webinar <ArrowRight size={14} />
-                </a>
+
+              <div className="bg-navy-light/80 backdrop-blur-sm rounded-2xl p-6 border border-teal/10 hover:border-teal/25 transition-colors">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center shrink-0">
+                    <Phone className="text-teal" size={20} />
+                  </div>
+                  <div>
+                    <p className="text-primary-foreground/40 text-xs uppercase tracking-wider mb-1">Call Us</p>
+                    <a href="tel:+41325100822" className="text-primary-foreground font-medium hover:text-teal transition">
+                      +41 (0)32 510 0822
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </motion.div>
+
+              <a
+                href="https://calendly.com/datametrixag/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-teal/10 backdrop-blur-sm rounded-2xl p-6 border border-teal/20 hover:bg-teal/15 transition-colors group"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-teal/20 flex items-center justify-center shrink-0">
+                    <Calendar className="text-teal" size={20} />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-primary-foreground/40 text-xs uppercase tracking-wider mb-1">Schedule a Meeting</p>
+                    <p className="text-primary-foreground font-medium">Book a 30-min Call</p>
+                  </div>
+                  <ArrowRight className="text-teal group-hover:translate-x-1 transition-transform" size={20} />
+                </div>
+              </a>
+            </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Office Locations */}
-      <section className="section-padding bg-navy">
-        <div className="max-w-5xl mx-auto">
-          <motion.h2
+      <section className="section-padding bg-background">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-display text-3xl font-bold text-primary-foreground mb-10 text-center"
+            className="text-center mb-14"
           >
-            Our Offices
-          </motion.h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="inline-flex items-center gap-2 bg-teal/10 text-teal text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+              <Globe size={14} />
+              Global Presence
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
+              Our Offices
+            </h2>
+          </motion.div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {offices.map((office, i) => (
               <motion.div
                 key={office.country}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="p-6 rounded-2xl bg-navy-light border border-teal/10"
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                className="group relative bg-card rounded-2xl border border-border hover:border-teal/30 transition-all hover:shadow-lg hover:shadow-teal/5 overflow-hidden"
               >
-                <h3 className="font-display text-sm font-semibold text-teal uppercase tracking-wider mb-3">
-                  {office.country}
-                </h3>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <MapPin className="text-primary-foreground/40 mt-0.5 shrink-0" size={14} />
-                    <p className="text-xs text-primary-foreground/60 leading-relaxed">{office.address}</p>
+                {/* Top accent bar */}
+                <div className={`h-1 w-full ${i === 0 ? 'bg-teal' : 'bg-border group-hover:bg-teal/50 transition-colors'}`} />
+
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-2xl">{office.flag}</span>
+                    <div>
+                      <h3 className="font-display text-sm font-bold text-foreground leading-tight">
+                        {office.country === "Headquarter SWITZERLAND" ? "Switzerland" : office.country}
+                      </h3>
+                      {office.country === "Headquarter SWITZERLAND" && (
+                        <span className="text-[10px] uppercase tracking-wider text-teal font-semibold">Headquarters</span>
+                      )}
+                      <p className="text-xs text-muted-foreground">{office.city}</p>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Phone className="text-primary-foreground/40 shrink-0" size={14} />
-                    <a href={`tel:${office.phone.replace(/\s/g, '')}`} className="text-xs text-primary-foreground/60 hover:text-teal transition">
-                      {office.phone}
-                    </a>
+
+                  <div className="space-y-3 pt-3 border-t border-border">
+                    <div className="flex items-start gap-2.5">
+                      <MapPin className="text-muted-foreground/60 mt-0.5 shrink-0" size={13} />
+                      <p className="text-xs text-muted-foreground leading-relaxed">{office.address}</p>
+                    </div>
+                    <div className="flex items-center gap-2.5">
+                      <Phone className="text-muted-foreground/60 shrink-0" size={13} />
+                      <a
+                        href={`tel:${office.phone.replace(/\s/g, '')}`}
+                        className="text-xs text-muted-foreground hover:text-teal transition font-medium"
+                      >
+                        {office.phone}
+                      </a>
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -128,59 +192,56 @@ const ContactUs = () => {
         </div>
       </section>
 
-      {/* Contact Form / CTA */}
-      <section className="section-padding bg-background">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12">
+      {/* Webinar + Book a Call */}
+      <section className="section-padding bg-navy">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* Webinar */}
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
+              className="bg-navy-light rounded-2xl p-8 md:p-10 border border-teal/10 flex flex-col"
             >
-              <h2 className="font-display text-3xl font-bold text-foreground mb-4">Send us a message</h2>
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                We will get back to you within maximum 24 hours.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-teal/10 flex items-center justify-center">
-                    <Mail className="text-teal" size={18} />
-                  </div>
-                  <a href="mailto:info@datametrix.ch" className="text-foreground text-sm hover:text-teal transition font-medium">
-                    info@datametrix.ch
-                  </a>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-teal/10 flex items-center justify-center">
-                    <Phone className="text-teal" size={18} />
-                  </div>
-                  <a href="tel:+41325100822" className="text-foreground text-sm hover:text-teal transition font-medium">
-                    +41 (0)32 510 0822
-                  </a>
-                </div>
+              <div className="w-14 h-14 rounded-2xl bg-teal/10 flex items-center justify-center mb-6">
+                <Video className="text-teal" size={24} />
               </div>
+              <h2 className="font-display text-2xl font-bold text-primary-foreground mb-4">Webinars</h2>
+              <p className="text-sm text-primary-foreground/50 leading-relaxed mb-6 flex-1">
+                datametrix offers webinars on different topics to share expertise and knowledge with employees and customers. Subscribe to stay informed about upcoming sessions.
+              </p>
+              <a
+                href="mailto:info@datametrix.ch?subject=Webinar%20Subscription"
+                className="inline-flex items-center justify-center gap-2 border border-teal/30 text-teal px-6 py-3.5 rounded-xl font-semibold text-sm hover:bg-teal/10 transition group"
+              >
+                Subscribe to Webinars
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              </a>
             </motion.div>
 
+            {/* Book a Call */}
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-card rounded-2xl p-8 border border-border"
+              transition={{ delay: 0.1 }}
+              className="bg-navy-light rounded-2xl p-8 md:p-10 border border-teal/10 flex flex-col"
             >
-              <h3 className="font-display text-xl font-semibold text-foreground mb-2">
-                Prefer jumping on a call?
-              </h3>
-              <p className="text-muted-foreground text-sm mb-6">
-                View our calendar and book a call at your preferred time.
+              <div className="w-14 h-14 rounded-2xl bg-teal/10 flex items-center justify-center mb-6">
+                <Calendar className="text-teal" size={24} />
+              </div>
+              <h2 className="font-display text-2xl font-bold text-primary-foreground mb-4">Book a Call</h2>
+              <p className="text-sm text-primary-foreground/50 leading-relaxed mb-6 flex-1">
+                Prefer a direct conversation? View our calendar and schedule a 30-minute call at a time that works best for you.
               </p>
               <a
                 href="https://calendly.com/datametrixag/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-teal text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:brightness-110 transition group w-full justify-center"
+                className="inline-flex items-center justify-center gap-2 bg-teal text-accent-foreground px-6 py-3.5 rounded-xl font-semibold text-sm hover:brightness-110 transition group"
               >
-                Book a Call
-                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                Schedule a Meeting
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </a>
             </motion.div>
           </div>
