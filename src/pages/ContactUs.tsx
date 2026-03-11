@@ -47,81 +47,79 @@ const ContactUs = () => {
 
       {/* Hero */}
       <section className="bg-navy pt-32 pb-20 section-padding relative overflow-hidden">
-        {/* Decorative elements */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-teal/5 blur-[120px] -translate-y-1/2 translate-x-1/4" />
         <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full bg-solar-orange/5 blur-[100px] translate-y-1/2 -translate-x-1/4" />
 
         <div className="max-w-6xl mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <p className="text-sm uppercase tracking-[0.2em] text-teal font-semibold mb-4">Get in Touch</p>
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-                Let's Start a<br />
-                <span className="text-teal">Conversation</span>
-              </h1>
-              <p className="text-primary-foreground/60 leading-relaxed text-lg max-w-lg">
-                Whether you need a service quotation or want to learn more about our capabilities, our team is ready to help.
-              </p>
-            </motion.div>
+          {/* Hero text */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl mb-14"
+          >
+            <p className="text-sm uppercase tracking-[0.2em] text-teal font-semibold mb-4">Get in Touch</p>
+            <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-6 leading-tight">
+              Let's Start a <span className="text-teal">Conversation</span>
+            </h1>
+            <p className="text-primary-foreground/60 leading-relaxed text-lg">
+              Whether you need a service quotation or want to learn more about our capabilities, our team is ready to help.
+            </p>
+          </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="space-y-4"
-            >
-              {/* Quick contact cards */}
-              <div className="bg-navy-light/80 backdrop-blur-sm rounded-2xl p-6 border border-teal/10 hover:border-teal/25 transition-colors">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center shrink-0">
-                    <Mail className="text-teal" size={20} />
-                  </div>
-                  <div>
-                    <p className="text-primary-foreground/40 text-xs uppercase tracking-wider mb-1">Email Us</p>
-                    <a href="mailto:info@datametrix.ch" className="text-primary-foreground font-medium hover:text-teal transition">
-                      info@datametrix.ch
-                    </a>
-                  </div>
+          {/* Contact cards row */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="grid sm:grid-cols-3 gap-4"
+          >
+            <div className="bg-navy-light/80 backdrop-blur-sm rounded-2xl p-6 border border-teal/10 hover:border-teal/25 transition-colors">
+              <div className="flex items-center gap-4">
+                <div className="w-11 h-11 rounded-xl bg-teal/10 flex items-center justify-center shrink-0">
+                  <Mail className="text-teal" size={18} />
+                </div>
+                <div>
+                  <p className="text-primary-foreground/40 text-xs uppercase tracking-wider mb-0.5">Email</p>
+                  <a href="mailto:info@datametrix.ch" className="text-primary-foreground text-sm font-medium hover:text-teal transition">
+                    info@datametrix.ch
+                  </a>
                 </div>
               </div>
+            </div>
 
-              <div className="bg-navy-light/80 backdrop-blur-sm rounded-2xl p-6 border border-teal/10 hover:border-teal/25 transition-colors">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center shrink-0">
-                    <Phone className="text-teal" size={20} />
-                  </div>
-                  <div>
-                    <p className="text-primary-foreground/40 text-xs uppercase tracking-wider mb-1">Call Us</p>
-                    <a href="tel:+41325100822" className="text-primary-foreground font-medium hover:text-teal transition">
-                      +41 (0)32 510 0822
-                    </a>
-                  </div>
+            <div className="bg-navy-light/80 backdrop-blur-sm rounded-2xl p-6 border border-teal/10 hover:border-teal/25 transition-colors">
+              <div className="flex items-center gap-4">
+                <div className="w-11 h-11 rounded-xl bg-teal/10 flex items-center justify-center shrink-0">
+                  <Phone className="text-teal" size={18} />
+                </div>
+                <div>
+                  <p className="text-primary-foreground/40 text-xs uppercase tracking-wider mb-0.5">Call</p>
+                  <a href="tel:+41325100822" className="text-primary-foreground text-sm font-medium hover:text-teal transition">
+                    +41 (0)32 510 0822
+                  </a>
                 </div>
               </div>
+            </div>
 
-              <a
-                href="https://calendly.com/datametrixag/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block bg-teal/10 backdrop-blur-sm rounded-2xl p-6 border border-teal/20 hover:bg-teal/15 transition-colors group"
-              >
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-teal/20 flex items-center justify-center shrink-0">
-                    <Calendar className="text-teal" size={20} />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-primary-foreground/40 text-xs uppercase tracking-wider mb-1">Schedule a Meeting</p>
-                    <p className="text-primary-foreground font-medium">Book a 30-min Call</p>
-                  </div>
-                  <ArrowRight className="text-teal group-hover:translate-x-1 transition-transform" size={20} />
+            <a
+              href="https://calendly.com/datametrixag/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-teal/10 backdrop-blur-sm rounded-2xl p-6 border border-teal/20 hover:bg-teal/15 transition-colors group"
+            >
+              <div className="flex items-center gap-4">
+                <div className="w-11 h-11 rounded-xl bg-teal/20 flex items-center justify-center shrink-0">
+                  <Calendar className="text-teal" size={18} />
                 </div>
-              </a>
-            </motion.div>
-          </div>
+                <div className="flex-1">
+                  <p className="text-primary-foreground/40 text-xs uppercase tracking-wider mb-0.5">Meeting</p>
+                  <p className="text-primary-foreground text-sm font-medium">Book a 30-min Call</p>
+                </div>
+                <ArrowRight className="text-teal group-hover:translate-x-1 transition-transform" size={18} />
+              </div>
+            </a>
+          </motion.div>
         </div>
       </section>
 
