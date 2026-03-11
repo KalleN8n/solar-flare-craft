@@ -46,7 +46,7 @@ const ContactUs = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-navy pt-56 pb-24 section-padding relative overflow-hidden">
+      <section className="bg-navy pt-44 pb-24 section-padding relative overflow-hidden" style={{ marginTop: '120px' }}>
         {/* Decorative elements */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-teal/5 blur-[120px] -translate-y-1/2 translate-x-1/4" />
         <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full bg-solar-orange/5 blur-[100px] translate-y-1/2 -translate-x-1/4" />
