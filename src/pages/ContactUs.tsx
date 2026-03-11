@@ -126,7 +126,7 @@ const ContactUs = () => {
       </section>
 
       {/* Office Locations */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-navy py-20">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
