@@ -22,6 +22,7 @@ import ContactUs from "./pages/ContactUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Imprint from "./pages/Imprint";
 import NotFound from "./pages/NotFound";
+import SwissCdiscGuide from "./pages/SwissCdiscGuide";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/success-stories/successful-projects" element={<SuccessfulProjects />} />
           <Route path="/success-stories/customer-testimonials" element={<CustomerTestimonials />} />
           <Route path="/insights" element={<Insights />} />
+          <Route path="/insights/swiss-cdisc-guide-2026" element={<SwissCdiscGuide />} />
           <Route path="/insights/:slug" element={<InsightArticle />} />
           <Route path="/news" element={<Insights />} />
           <Route path="/events" element={<Events />} />
