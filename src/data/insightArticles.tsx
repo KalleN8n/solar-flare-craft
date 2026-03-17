@@ -16,6 +16,16 @@ export interface InsightItem {
 
 export const insights: InsightItem[] = [
   {
+    slug: "swiss-cdisc-guide-2026",
+    title: "Swiss CDISC Submission Guide 2026",
+    excerpt: "A practical guide for sponsors and project managers preparing Swissmedic regulatory submissions. Prevent refuse-to-file delays and understand Swiss-specific CDISC requirements.",
+    type: "white-paper",
+    category: "Data Management",
+    date: "March 2026",
+    readTime: "15 min read",
+    featured: true,
+  },
+  {
     slug: "rwe-clinical-trial-design",
     title: "How Real-World Evidence is Reshaping Clinical Trial Design",
     excerpt: "Explore how pharmaceutical companies leverage electronic health records and claims data to build synthetic control arms, optimize enrollment criteria, and accelerate regulatory submissions.",
