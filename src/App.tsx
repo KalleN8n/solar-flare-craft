@@ -22,6 +22,7 @@ import ContactUs from "./pages/ContactUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Imprint from "./pages/Imprint";
 import NotFound from "./pages/NotFound";
+import SwissCdiscGuide from "./pages/SwissCdiscGuide";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
