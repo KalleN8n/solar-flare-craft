@@ -58,11 +58,18 @@ const SwissCdiscGuide = () => {
 
     setSubmitting(true);
     try {
-      const subject = encodeURIComponent(`[White Paper Download] ${form.firstName} ${form.lastName} — ${form.company}`);
-      const body = encodeURIComponent(
-        `New white paper download request:\n\nFirst Name: ${form.firstName}\nLast Name: ${form.lastName}\nEmail: ${form.email}\nCompany: ${form.company}\nJob Title: ${form.jobTitle}\n\nWhite Paper: Swiss CDISC Submission Guide 2026`
+      await emailjs.send(
+        "service_d6xg1av",
+        "template_r97ery2",
+        {
+          firstName: form.firstName,
+          lastName: form.lastName,
+          email: form.email,
+          company: form.company,
+          jobTitle: form.jobTitle,
+        },
+        "YfQaPL0wc1_PRIdoS"
       );
-      window.open(`mailto:datametrixag@gmail.com?subject=${subject}&body=${body}`, "_blank");
 
       const link = document.createElement("a");
       link.href = "/downloads/swiss-cdisc-submission-guide-2026.pdf";
