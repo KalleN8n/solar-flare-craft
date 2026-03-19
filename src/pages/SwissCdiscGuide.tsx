@@ -156,7 +156,7 @@ const SwissCdiscGuide = () => {
       <Navbar />
 
       {/* ─── HERO ─── */}
-      <section className="pt-32 pb-14 px-6 md:px-12 lg:px-24 bg-navy relative overflow-hidden">
+      <section className="pt-36 md:pt-40 pb-14 px-6 md:px-12 lg:px-24 bg-navy relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "radial-gradient(hsl(var(--primary-foreground)) 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
 
         <div className="max-w-6xl mx-auto relative">
@@ -238,7 +238,7 @@ const SwissCdiscGuide = () => {
       </section>
 
       {/* ─── SECTION: PROBLEM (Pain / Risk) ─── */}
-      <section id="section-risk" className="px-6 py-14 md:px-12 lg:px-24 bg-background">
+      <section id="section-risk" className="scroll-mt-36 md:scroll-mt-40 px-6 py-14 md:px-12 lg:px-24 bg-background">
         <div className="max-w-6xl mx-auto">
           {/* Section transition label */}
           <motion.p
