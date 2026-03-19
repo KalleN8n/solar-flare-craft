@@ -92,8 +92,15 @@ const SwissCdiscGuide = () => {
 
   const inputCls = "w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring/40 transition-shadow";
 
-  /* Reusable form component */
-  const LeadForm = ({ id, containerRef, variant = "light" }: { id?: string; containerRef?: React.Ref<HTMLDivElement>; variant?: "light" | "dark" }) => {
+  const renderLeadForm = ({
+    id,
+    containerRef,
+    variant = "light",
+  }: {
+    id?: string;
+    containerRef?: React.Ref<HTMLDivElement>;
+    variant?: "light" | "dark";
+  }) => {
     const isDark = variant === "dark";
     return (
       <div
