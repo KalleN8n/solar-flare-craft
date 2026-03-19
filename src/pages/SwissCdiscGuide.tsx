@@ -220,7 +220,7 @@ const SwissCdiscGuide = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.6 }}
-          className="flex flex-col items-center mt-16 pb-2"
+          className="flex flex-col items-center mt-24 pb-2"
         >
           <button
             onClick={() => document.getElementById("section-risk")?.scrollIntoView({ behavior: "smooth" })}
