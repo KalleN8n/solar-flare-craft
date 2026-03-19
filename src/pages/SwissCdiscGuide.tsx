@@ -92,8 +92,15 @@ const SwissCdiscGuide = () => {
 
   const inputCls = "w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring/40 transition-shadow";
 
-  /* Reusable form component */
-  const LeadForm = ({ id, containerRef, variant = "light" }: { id?: string; containerRef?: React.Ref<HTMLDivElement>; variant?: "light" | "dark" }) => {
+  const renderLeadForm = ({
+    id,
+    containerRef,
+    variant = "light",
+  }: {
+    id?: string;
+    containerRef?: React.Ref<HTMLDivElement>;
+    variant?: "light" | "dark";
+  }) => {
     const isDark = variant === "dark";
     return (
       <div
@@ -218,7 +225,7 @@ const SwissCdiscGuide = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <LeadForm id="download-form" containerRef={formRef} />
+              {renderLeadForm({ id: "download-form", containerRef: formRef })}
             </motion.div>
           </div>
         </div>
@@ -511,7 +518,7 @@ const SwissCdiscGuide = () => {
             </div>
 
             <div className="max-w-md mx-auto">
-              <LeadForm containerRef={bottomFormRef} variant="dark" />
+              {renderLeadForm({ containerRef: bottomFormRef, variant: "dark" })}
             </div>
           </motion.div>
         </div>
