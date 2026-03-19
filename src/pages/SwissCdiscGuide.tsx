@@ -225,7 +225,7 @@ const SwissCdiscGuide = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <LeadForm id="download-form" containerRef={formRef} />
+              {renderLeadForm({ id: "download-form", containerRef: formRef })}
             </motion.div>
           </div>
         </div>
