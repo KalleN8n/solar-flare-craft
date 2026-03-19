@@ -42,19 +42,33 @@ const Events = () => {
             viewport={{ once: true }}
           >
             <h2 className="font-display text-3xl font-bold text-foreground mb-10">Upcoming Events</h2>
-            <div className="p-12 rounded-2xl bg-card border border-border text-center">
-              <Calendar className="text-teal mx-auto mb-4" size={40} />
-              <h3 className="font-display text-xl font-semibold text-foreground mb-3">Stay tuned</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6 max-w-md mx-auto">
-                We are planning exciting events and conference participations. Subscribe to our newsletter to be the first to know about our upcoming events.
-              </p>
-              <a
-                href="mailto:info@datametrix.ch?subject=Please%20Subscribe%20Me%20to%20Datametrix%20Newsletter&body=I%20would%20like%20to%20receive%20useful%20insights%20about%20Data%20challenges%20in%20life%20science%20companies.%20Kind%20regards,"
-                className="inline-flex items-center gap-2 bg-teal text-accent-foreground px-6 py-3 rounded-lg font-semibold hover:brightness-110 transition group"
-              >
-                Subscribe to Newsletter
-                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-              </a>
+            <div className="p-8 rounded-2xl bg-card border border-border">
+              <div className="flex flex-col md:flex-row md:items-center gap-6">
+                <div className="flex flex-col items-center justify-center bg-teal/10 rounded-xl px-5 py-4 shrink-0">
+                  <span className="text-teal font-display text-sm font-semibold uppercase">May</span>
+                  <span className="text-teal font-display text-3xl font-bold leading-tight">4–5</span>
+                  <span className="text-teal/70 font-display text-sm font-medium">2026</span>
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-display text-xl font-semibold text-foreground mb-2">Swiss Biotech Day 2026</h3>
+                  <div className="flex items-center gap-1.5 mb-3">
+                    <MapPin className="text-muted-foreground" size={14} />
+                    <span className="text-sm text-muted-foreground">Congress Center Basel, Switzerland</span>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed text-sm mb-4">
+                    Meet the Datametrix team at Swiss Biotech Day — a premier global biotechnology conference bringing together 3,000+ life sciences professionals to network, exchange ideas and explore advances in data management, AI and R&D.
+                  </p>
+                  <a
+                    href="https://swissbiotechday.ch/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-teal text-accent-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:brightness-110 transition group"
+                  >
+                    Learn More
+                    <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
