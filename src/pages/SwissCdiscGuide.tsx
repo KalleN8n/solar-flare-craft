@@ -518,7 +518,7 @@ const SwissCdiscGuide = () => {
             </div>
 
             <div className="max-w-md mx-auto">
-              <LeadForm containerRef={bottomFormRef} variant="dark" />
+              {renderLeadForm({ containerRef: bottomFormRef, variant: "dark" })}
             </div>
           </motion.div>
         </div>
