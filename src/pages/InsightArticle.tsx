@@ -27,7 +27,7 @@ const InsightArticle = () => {
       <Navbar />
 
       {/* Header */}
-      <section className="bg-navy pt-36 md:pt-44 pb-16 section-padding">
+      <section className="bg-navy pt-36 md:pt-44 pb-10 section-padding">
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <Link
