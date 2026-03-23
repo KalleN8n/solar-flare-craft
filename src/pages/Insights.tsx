@@ -53,7 +53,7 @@ const Insights = () => {
       </section>
 
       {/* Featured */}
-      <section className="section-padding bg-background">
+<section className="px-6 pt-8 pb-20 md:px-12 lg:px-24 lg:pt-10 lg:pb-28 bg-background">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-display text-sm uppercase tracking-[0.15em] text-muted-foreground font-semibold mb-8">Featured</h2>
           <div className="grid md:grid-cols-2 gap-6 mb-16">

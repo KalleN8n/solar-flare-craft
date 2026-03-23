@@ -46,7 +46,7 @@ const ContactUs = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-navy pt-32 pb-24 section-padding relative overflow-hidden">
+      <section className="bg-navy pt-36 md:pt-44 pb-24 section-padding relative overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-teal/5 blur-[120px] -translate-y-1/2 translate-x-1/4" />
         <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full bg-solar-orange/5 blur-[100px] translate-y-1/2 -translate-x-1/4" />
@@ -126,7 +126,7 @@ const ContactUs = () => {
       </section>
 
       {/* Office Locations */}
-      <section className="section-padding bg-background">
+<section className="px-6 pt-8 pb-20 md:px-12 lg:px-24 lg:pt-10 lg:pb-28 bg-background">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
