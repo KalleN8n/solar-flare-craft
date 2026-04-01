@@ -429,7 +429,7 @@ const SwissCdiscGuide = () => {
                   "Complete CRF-to-CSR traceability model",
                   "Common technical validation rejection triggers and how to prevent them",
                   "When to start CDISC planning for each study phase",
-                  "Swiss-specific metadata (SNCTP, EKOS)",
+                  "Swiss-specific metadata (SNCTP, BASEC (ethics submission system))",
                   "Timeline & cost: early vs. late engagement",
                 ].map((item, i) => (
                   <motion.li
