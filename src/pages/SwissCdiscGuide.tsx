@@ -241,7 +241,7 @@ const SwissCdiscGuide = () => {
             onClick={() => document.getElementById("section-risk")?.scrollIntoView({ behavior: "smooth" })}
             className="group flex flex-col items-center gap-1.5 text-primary-foreground/40 hover:text-teal transition-colors"
           >
-            <span className="text-[11px] tracking-wide">Understand the #1 cause of Refuse‑to‑File</span>
+            <span className="text-[11px] tracking-wide">Understand the #1 cause of Technical Validation Rejections</span>
             <motion.div
               animate={{ y: [0, 6, 0] }}
               transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
