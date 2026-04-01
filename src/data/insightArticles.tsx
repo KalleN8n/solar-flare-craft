@@ -244,7 +244,7 @@ export const articleContents: Record<string, ArticleContent> = {
         paragraphs: [
           "The most efficient CDISC implementations are metadata-driven. Rather than manually coding each transformation, sponsors define their mappings in a central metadata repository, and automation tools generate the SDTM and ADaM datasets programmatically.",
           "This approach offers several advantages: consistency across studies, easier validation, faster turnaround, and built-in traceability from source data through to analysis datasets. When regulatory agencies request clarification on a specific derivation, the complete audit trail is immediately available.",
-          "Our metadata-driven framework at Datametrix has been validated across more than 50 regulatory submissions, with zero refuse-to-file decisions related to data standards compliance.",
+          "Our metadata-driven framework at Datametrix has been validated across more than 50 regulatory submissions, with zero technical validation rejections related to data standards compliance.",
         ],
       },
       {
