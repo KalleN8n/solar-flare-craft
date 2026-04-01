@@ -18,7 +18,7 @@ export const insights: InsightItem[] = [
   {
     slug: "swiss-cdisc-guide-2026",
     title: "Swiss CDISC Submission Guide 2026",
-    excerpt: "A practical guide for sponsors and project managers preparing Swissmedic regulatory submissions. Prevent refuse-to-file delays and understand Swiss-specific CDISC requirements.",
+    excerpt: "A practical guide for sponsors and project managers preparing Swissmedic regulatory submissions. Prevent technical validation rejections and understand Swiss-specific CDISC requirements.",
     type: "white-paper",
     category: "Data Management",
     date: "March 2026",
