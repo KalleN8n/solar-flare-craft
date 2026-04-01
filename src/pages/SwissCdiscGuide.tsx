@@ -184,7 +184,7 @@ const SwissCdiscGuide = () => {
 
               <h1 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-primary-foreground leading-[1.15] mb-5">
                 Avoid Swissmedic{" "}
-                <span className="text-teal">Refuse‑to‑File</span> in 2026
+                <span className="text-teal">Technical Validation Rejections</span> in 2026
               </h1>
 
               <p className="text-base text-primary-foreground/70 leading-relaxed mb-6 max-w-lg">
