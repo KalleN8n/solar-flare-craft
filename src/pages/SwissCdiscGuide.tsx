@@ -281,7 +281,7 @@ const SwissCdiscGuide = () => {
               {[
                 { icon: <AlertTriangle size={20} />, title: "Poor CDISC Traceability", desc: "Broken CRF → SDTM → ADaM links trigger validation failures and reviewer queries." },
                 { icon: <Clock size={20} />, title: "Late CDISC Engagement", desc: "Post-lock CDISC implementation leads to expensive retrofitting and timeline overruns." },
-                { icon: <FileCheck size={20} />, title: "Missing Swiss Metadata", desc: "SNCTP identifiers, EKOS references, and multilingual data are frequently overlooked." },
+                { icon: <FileCheck size={20} />, title: "Missing Swiss Metadata", desc: "SNCTP identifiers, BASEC references, and multilingual data are frequently overlooked." },
               ].map((item, i) => (
                 <motion.div
                   key={item.title}
