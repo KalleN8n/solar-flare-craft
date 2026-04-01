@@ -367,7 +367,7 @@ const SwissCdiscGuide = () => {
               <div className="flex flex-wrap gap-2">
                 {[
                   { label: "SNCTP", desc: "Clinical Trials Portal" },
-                  { label: "EKOS", desc: "Ethics Committee System" },
+                  { label: "BASEC", desc: "Business Administration System for Ethics Committees" },
                   { label: "Multilingual", desc: "DE / FR / IT data" },
                 ].map((item) => (
                   <span key={item.label} className="inline-flex items-center gap-1.5 text-[11px] bg-card border border-border rounded-full px-3 py-1.5 text-foreground">
