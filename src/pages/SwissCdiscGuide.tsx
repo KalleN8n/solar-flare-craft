@@ -427,7 +427,7 @@ const SwissCdiscGuide = () => {
                   "Swissmedic submission expectations & requirements",
                   "CDISC implementation strategy from protocol to filing",
                   "Complete CRF-to-CSR traceability model",
-                  "Common RTF triggers and how to prevent them",
+                  "Common technical validation rejection triggers and how to prevent them",
                   "When to start CDISC planning for each study phase",
                   "Swiss-specific metadata (SNCTP, EKOS)",
                   "Timeline & cost: early vs. late engagement",
