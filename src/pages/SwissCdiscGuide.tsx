@@ -461,7 +461,7 @@ const SwissCdiscGuide = () => {
                 {[
                   { value: "CDISC", label: "Silver Partner" },
                   { value: "50+", label: "Submissions" },
-                  { value: "0", label: "RTF decisions" },
+                  { value: "0", label: "Technical validation rejections" },
                 ].map((stat) => (
                   <div key={stat.label} className="text-center p-3 rounded-lg border border-primary-foreground/10 bg-primary-foreground/5">
                     <div className="text-xl font-display font-bold text-teal mb-0.5">{stat.value}</div>
