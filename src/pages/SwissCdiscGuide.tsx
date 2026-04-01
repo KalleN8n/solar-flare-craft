@@ -194,7 +194,7 @@ const SwissCdiscGuide = () => {
               <ul className="space-y-2.5 mb-6">
                 {[
                   "Prevent 3–6 month submission delays",
-                  "Understand Swiss-specific requirements (SNCTP, EKOS)",
+                  "Understand Swiss-specific requirements (SNCTP, BASEC (ethics submission system))",
                   "Fix CRF → SDTM → ADaM traceability gaps",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5">
@@ -281,7 +281,7 @@ const SwissCdiscGuide = () => {
               {[
                 { icon: <AlertTriangle size={20} />, title: "Poor CDISC Traceability", desc: "Broken CRF → SDTM → ADaM links trigger validation failures and reviewer queries." },
                 { icon: <Clock size={20} />, title: "Late CDISC Engagement", desc: "Post-lock CDISC implementation leads to expensive retrofitting and timeline overruns." },
-                { icon: <FileCheck size={20} />, title: "Missing Swiss Metadata", desc: "SNCTP identifiers, EKOS references, and multilingual data are frequently overlooked." },
+                { icon: <FileCheck size={20} />, title: "Missing Swiss Metadata", desc: "SNCTP identifiers, BASEC references, and multilingual data are frequently overlooked." },
               ].map((item, i) => (
                 <motion.div
                   key={item.title}
@@ -367,7 +367,7 @@ const SwissCdiscGuide = () => {
               <div className="flex flex-wrap gap-2">
                 {[
                   { label: "SNCTP", desc: "Clinical Trials Portal" },
-                  { label: "EKOS", desc: "Ethics Committee System" },
+                  { label: "BASEC", desc: "Business Administration System for Ethics Committees" },
                   { label: "Multilingual", desc: "DE / FR / IT data" },
                 ].map((item) => (
                   <span key={item.label} className="inline-flex items-center gap-1.5 text-[11px] bg-card border border-border rounded-full px-3 py-1.5 text-foreground">
@@ -427,9 +427,9 @@ const SwissCdiscGuide = () => {
                   "Swissmedic submission expectations & requirements",
                   "CDISC implementation strategy from protocol to filing",
                   "Complete CRF-to-CSR traceability model",
-                  "Common RTF triggers and how to prevent them",
+                  "Common technical validation rejection triggers and how to prevent them",
                   "When to start CDISC planning for each study phase",
-                  "Swiss-specific metadata (SNCTP, EKOS)",
+                  "Swiss-specific metadata (SNCTP, BASEC (ethics submission system))",
                   "Timeline & cost: early vs. late engagement",
                 ].map((item, i) => (
                   <motion.li
@@ -461,7 +461,7 @@ const SwissCdiscGuide = () => {
                 {[
                   { value: "CDISC", label: "Silver Partner" },
                   { value: "50+", label: "Submissions" },
-                  { value: "0", label: "RTF decisions" },
+                  { value: "0", label: "Technical validation rejections" },
                 ].map((stat) => (
                   <div key={stat.label} className="text-center p-3 rounded-lg border border-primary-foreground/10 bg-primary-foreground/5">
                     <div className="text-xl font-display font-bold text-teal mb-0.5">{stat.value}</div>
