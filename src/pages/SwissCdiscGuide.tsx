@@ -158,7 +158,7 @@ const SwissCdiscGuide = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Swiss CDISC Submission Guide 2026 | Datametrix AG"
-        description="Download the practical CDISC guide for sponsors preparing Swissmedic submissions. Prevent refuse-to-file delays, understand Swiss-specific requirements, and fix CRF-SDTM-ADaM traceability."
+        description="Download the practical CDISC guide for sponsors preparing Swissmedic submissions. Prevent technical validation rejections, understand Swiss-specific requirements, and fix CRF-SDTM-ADaM traceability."
         canonical="/insights/swiss-cdisc-guide-2026"
         jsonLd={{
           "@context": "https://schema.org",
