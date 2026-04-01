@@ -158,7 +158,7 @@ const SwissCdiscGuide = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Swiss CDISC Submission Guide 2026 | Datametrix AG"
-        description="Download the practical CDISC guide for sponsors preparing Swissmedic submissions. Prevent refuse-to-file delays, understand Swiss-specific requirements, and fix CRF-SDTM-ADaM traceability."
+        description="Download the practical CDISC guide for sponsors preparing Swissmedic submissions. Prevent technical validation rejections, understand Swiss-specific requirements, and fix CRF-SDTM-ADaM traceability."
         canonical="/insights/swiss-cdisc-guide-2026"
         jsonLd={{
           "@context": "https://schema.org",
@@ -184,7 +184,7 @@ const SwissCdiscGuide = () => {
 
               <h1 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-primary-foreground leading-[1.15] mb-5">
                 Avoid Swissmedic{" "}
-                <span className="text-teal">Refuse‑to‑File</span> in 2026
+                <span className="text-teal">Technical Validation Rejections</span> in 2026
               </h1>
 
               <p className="text-base text-primary-foreground/70 leading-relaxed mb-6 max-w-lg">
@@ -241,7 +241,7 @@ const SwissCdiscGuide = () => {
             onClick={() => document.getElementById("section-risk")?.scrollIntoView({ behavior: "smooth" })}
             className="group flex flex-col items-center gap-1.5 text-primary-foreground/40 hover:text-teal transition-colors"
           >
-            <span className="text-[11px] tracking-wide">Understand the #1 cause of Refuse‑to‑File</span>
+            <span className="text-[11px] tracking-wide">Understand the #1 cause of Technical Validation Rejections</span>
             <motion.div
               animate={{ y: [0, 6, 0] }}
               transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
@@ -274,7 +274,7 @@ const SwissCdiscGuide = () => {
               Why Swissmedic Submissions Fail
             </h2>
             <p className="text-muted-foreground text-sm max-w-2xl mb-8">
-              Each year, sponsors face costly Refuse-to-File decisions — adding 3–6 months of delay. The root causes are preventable.
+              Each year, sponsors face costly Technical Validation Rejections — adding 3–6 months of delay. The root causes are preventable.
             </p>
 
             <div className="grid md:grid-cols-3 gap-4">

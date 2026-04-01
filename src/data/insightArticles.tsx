@@ -18,7 +18,7 @@ export const insights: InsightItem[] = [
   {
     slug: "swiss-cdisc-guide-2026",
     title: "Swiss CDISC Submission Guide 2026",
-    excerpt: "A practical guide for sponsors and project managers preparing Swissmedic regulatory submissions. Prevent refuse-to-file delays and understand Swiss-specific CDISC requirements.",
+    excerpt: "A practical guide for sponsors and project managers preparing Swissmedic regulatory submissions. Prevent technical validation rejections and understand Swiss-specific CDISC requirements.",
     type: "white-paper",
     category: "Data Management",
     date: "March 2026",
@@ -211,7 +211,7 @@ export const articleContents: Record<string, ArticleContent> = {
     slug: "cdisc-data-standards-guide",
     keyTakeaways: [
       "CDISC SDTM v2.0 and ADaM v3.0 introduce significant structural changes that sponsors must plan for in 2026.",
-      "The FDA now requires CDISC compliance for all new NDA and BLA submissions — non-compliance can trigger refuse-to-file decisions.",
+      "The FDA now requires CDISC compliance for all new NDA and BLA submissions — non-compliance can trigger technical validation rejections.",
       "Metadata-driven automation is the key to scalable, error-free CDISC implementation.",
       "Early engagement with standards during protocol development saves months of rework downstream.",
     ],
@@ -244,7 +244,7 @@ export const articleContents: Record<string, ArticleContent> = {
         paragraphs: [
           "The most efficient CDISC implementations are metadata-driven. Rather than manually coding each transformation, sponsors define their mappings in a central metadata repository, and automation tools generate the SDTM and ADaM datasets programmatically.",
           "This approach offers several advantages: consistency across studies, easier validation, faster turnaround, and built-in traceability from source data through to analysis datasets. When regulatory agencies request clarification on a specific derivation, the complete audit trail is immediately available.",
-          "Our metadata-driven framework at Datametrix has been validated across more than 50 regulatory submissions, with zero refuse-to-file decisions related to data standards compliance.",
+          "Our metadata-driven framework at Datametrix has been validated across more than 50 regulatory submissions, with zero technical validation rejections related to data standards compliance.",
         ],
       },
       {
