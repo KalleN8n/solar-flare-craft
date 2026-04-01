@@ -274,7 +274,7 @@ const SwissCdiscGuide = () => {
               Why Swissmedic Submissions Fail
             </h2>
             <p className="text-muted-foreground text-sm max-w-2xl mb-8">
-              Each year, sponsors face costly Refuse-to-File decisions — adding 3–6 months of delay. The root causes are preventable.
+              Each year, sponsors face costly Technical Validation Rejections — adding 3–6 months of delay. The root causes are preventable.
             </p>
 
             <div className="grid md:grid-cols-3 gap-4">
