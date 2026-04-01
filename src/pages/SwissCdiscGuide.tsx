@@ -194,7 +194,7 @@ const SwissCdiscGuide = () => {
               <ul className="space-y-2.5 mb-6">
                 {[
                   "Prevent 3–6 month submission delays",
-                  "Understand Swiss-specific requirements (SNCTP, BASEC (ethics submission system))",
+                  "Understand Swiss-specific requirements (SNCTP, BASEC (ethics submission system)",
                   "Fix CRF → SDTM → ADaM traceability gaps",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5">
