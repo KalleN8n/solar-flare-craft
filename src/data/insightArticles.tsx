@@ -211,7 +211,7 @@ export const articleContents: Record<string, ArticleContent> = {
     slug: "cdisc-data-standards-guide",
     keyTakeaways: [
       "CDISC SDTM v2.0 and ADaM v3.0 introduce significant structural changes that sponsors must plan for in 2026.",
-      "The FDA now requires CDISC compliance for all new NDA and BLA submissions — non-compliance can trigger refuse-to-file decisions.",
+      "The FDA now requires CDISC compliance for all new NDA and BLA submissions — non-compliance can trigger technical validation rejections.",
       "Metadata-driven automation is the key to scalable, error-free CDISC implementation.",
       "Early engagement with standards during protocol development saves months of rework downstream.",
     ],
