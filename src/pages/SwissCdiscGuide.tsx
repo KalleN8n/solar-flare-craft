@@ -38,7 +38,18 @@ const SwissCdiscGuide = () => {
   }, []);
 
   const isBusinessEmail = (email: string) => {
-    const freeProviders = ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com", "aol.com", "mail.com", "protonmail.com", "icloud.com", "gmx.com", "yandex.com"];
+    const freeProviders = [
+      "gmail.com",
+      "yahoo.com",
+      "hotmail.com",
+      "outlook.com",
+      "aol.com",
+      "mail.com",
+      "protonmail.com",
+      "icloud.com",
+      "gmx.com",
+      "yandex.com",
+    ];
     const domain = email.split("@")[1]?.toLowerCase();
     return domain && !freeProviders.includes(domain);
   };
@@ -68,7 +79,7 @@ const SwissCdiscGuide = () => {
           company: form.company,
           jobTitle: form.jobTitle,
         },
-        "YfQaPL0wc1_PRIdoS"
+        "YfQaPL0wc1_PRIdoS",
       );
 
       const link = document.createElement("a");
@@ -90,7 +101,8 @@ const SwissCdiscGuide = () => {
     formRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
   };
 
-  const inputCls = "w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring/40 transition-shadow";
+  const inputCls =
+    "w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring/40 transition-shadow";
 
   const renderLeadForm = ({
     id,
@@ -111,25 +123,68 @@ const SwissCdiscGuide = () => {
         {submitted ? (
           <div className="text-center py-6">
             <CheckCircle2 className="mx-auto mb-3 text-teal" size={44} />
-            <h3 className={`font-display text-lg font-bold mb-2 ${isDark ? "text-primary-foreground" : "text-foreground"}`}>Your guide is downloading</h3>
+            <h3
+              className={`font-display text-lg font-bold mb-2 ${isDark ? "text-primary-foreground" : "text-foreground"}`}
+            >
+              Your guide is downloading
+            </h3>
             <p className={`text-sm ${isDark ? "text-primary-foreground/60" : "text-muted-foreground"}`}>
               Check your downloads folder. If it didn't start,{" "}
-              <a href="/downloads/swiss-cdisc-submission-guide-2026.pdf" download className="text-teal underline">click here</a>.
+              <a href="/downloads/swiss-cdisc-submission-guide-2026.pdf" download className="text-teal underline">
+                click here
+              </a>
+              .
             </p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-3">
-            <p className={`font-display font-semibold text-sm mb-1 ${isDark ? "text-primary-foreground" : "text-foreground"}`}>Download the Free Guide</p>
+            <p
+              className={`font-display font-semibold text-sm mb-1 ${isDark ? "text-primary-foreground" : "text-foreground"}`}
+            >
+              Download the Free Guide
+            </p>
             <div className="grid grid-cols-2 gap-2.5">
-              <input type="text" value={form.firstName} onChange={(e) => setForm({ ...form, firstName: e.target.value })} className={inputCls} placeholder="First Name" />
-              <input type="text" value={form.lastName} onChange={(e) => setForm({ ...form, lastName: e.target.value })} className={inputCls} placeholder="Last Name" />
+              <input
+                type="text"
+                value={form.firstName}
+                onChange={(e) => setForm({ ...form, firstName: e.target.value })}
+                className={inputCls}
+                placeholder="First Name"
+              />
+              <input
+                type="text"
+                value={form.lastName}
+                onChange={(e) => setForm({ ...form, lastName: e.target.value })}
+                className={inputCls}
+                placeholder="Last Name"
+              />
             </div>
-            <input type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className={inputCls} placeholder="Work Email (e.g. jane@pharma.com)" />
+            <input
+              type="email"
+              value={form.email}
+              onChange={(e) => setForm({ ...form, email: e.target.value })}
+              className={inputCls}
+              placeholder="Work Email (e.g. jane@pharma.com)"
+            />
             <div className="grid grid-cols-2 gap-2.5">
-              <input type="text" value={form.company} onChange={(e) => setForm({ ...form, company: e.target.value })} className={inputCls} placeholder="Company" />
-              <input type="text" value={form.jobTitle} onChange={(e) => setForm({ ...form, jobTitle: e.target.value })} className={inputCls} placeholder="Job Title" />
+              <input
+                type="text"
+                value={form.company}
+                onChange={(e) => setForm({ ...form, company: e.target.value })}
+                className={inputCls}
+                placeholder="Company"
+              />
+              <input
+                type="text"
+                value={form.jobTitle}
+                onChange={(e) => setForm({ ...form, jobTitle: e.target.value })}
+                className={inputCls}
+                placeholder="Job Title"
+              />
             </div>
-            <p className={`text-[10px] ${isDark ? "text-primary-foreground/40" : "text-muted-foreground"}`}>Please use your professional email address</p>
+            <p className={`text-[10px] ${isDark ? "text-primary-foreground/40" : "text-muted-foreground"}`}>
+              Please use your professional email address
+            </p>
 
             {error && (
               <p className="text-xs text-destructive flex items-center gap-1.5">
@@ -172,7 +227,13 @@ const SwissCdiscGuide = () => {
 
       {/* ─── HERO ─── */}
       <section className="pt-36 md:pt-40 pb-14 px-6 md:px-12 lg:px-24 bg-navy relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "radial-gradient(hsl(var(--primary-foreground)) 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
+        <div
+          className="absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage: "radial-gradient(hsl(var(--primary-foreground)) 1px, transparent 1px)",
+            backgroundSize: "32px 32px",
+          }}
+        />
 
         <div className="max-w-6xl mx-auto relative">
           <div className="grid lg:grid-cols-[1fr_420px] gap-10 lg:gap-14 items-start">
@@ -183,8 +244,7 @@ const SwissCdiscGuide = () => {
               </div>
 
               <h1 className="font-display text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-primary-foreground leading-[1.15] mb-5">
-                Avoid Swissmedic{" "}
-                <span className="text-teal">Technical Validation Rejections</span> in 2026
+                Avoid Swissmedic <span className="text-teal">Technical Validation Rejections</span> in 2026
               </h1>
 
               <p className="text-base text-primary-foreground/70 leading-relaxed mb-6 max-w-lg">
@@ -209,7 +269,7 @@ const SwissCdiscGuide = () => {
                 {[
                   { icon: <Shield size={13} />, text: "CDISC Silver Partner" },
                   { icon: <Users size={13} />, text: "Swiss-based specialists" },
-                  { icon: <BookOpen size={13} />, text: "19 pages · 15 min read" },
+                  { icon: <BookOpen size={13} />, text: "11 pages · 10 min read" },
                 ].map((b) => (
                   <div key={b.text} className="flex items-center gap-1.5 text-[11px] text-primary-foreground/50">
                     <span className="text-teal">{b.icon}</span>
@@ -241,11 +301,10 @@ const SwissCdiscGuide = () => {
             onClick={() => document.getElementById("section-risk")?.scrollIntoView({ behavior: "smooth" })}
             className="group flex flex-col items-center gap-1.5 text-primary-foreground/40 hover:text-teal transition-colors"
           >
-            <span className="text-[11px] tracking-wide">Understand the #1 cause of Technical Validation Rejections</span>
-            <motion.div
-              animate={{ y: [0, 6, 0] }}
-              transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
-            >
+            <span className="text-[11px] tracking-wide">
+              Understand the #1 cause of Technical Validation Rejections
+            </span>
+            <motion.div animate={{ y: [0, 6, 0] }} transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}>
               <ArrowDown size={16} className="group-hover:text-teal transition-colors" />
             </motion.div>
           </button>
@@ -265,7 +324,12 @@ const SwissCdiscGuide = () => {
             Here's where most submissions fail
           </motion.p>
 
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
             <div className="flex items-center gap-2 mb-3">
               <Zap className="text-solar-orange" size={16} />
               <p className="text-xs uppercase tracking-[0.2em] text-solar-orange font-semibold">The Risk</p>
@@ -274,14 +338,27 @@ const SwissCdiscGuide = () => {
               Why Swissmedic Submissions Fail
             </h2>
             <p className="text-muted-foreground text-sm max-w-2xl mb-8">
-              Sponsors can face costly submission rejections during technical validation, potentially adding several months of delay. The root causes are preventable.
+              Sponsors can face costly submission rejections during technical validation, potentially adding several
+              months of delay. The root causes are preventable.
             </p>
 
             <div className="grid md:grid-cols-3 gap-4">
               {[
-                { icon: <AlertTriangle size={20} />, title: "Poor CDISC Traceability", desc: "Broken CRF → SDTM → ADaM links trigger validation failures and reviewer queries." },
-                { icon: <Clock size={20} />, title: "Late CDISC Engagement", desc: "Post-lock CDISC implementation leads to expensive retrofitting and timeline overruns." },
-                { icon: <FileCheck size={20} />, title: "Missing Swiss Metadata", desc: "SNCTP identifiers, BASEC references, and multilingual data are frequently overlooked." },
+                {
+                  icon: <AlertTriangle size={20} />,
+                  title: "Poor CDISC Traceability",
+                  desc: "Broken CRF → SDTM → ADaM links trigger validation failures and reviewer queries.",
+                },
+                {
+                  icon: <Clock size={20} />,
+                  title: "Late CDISC Engagement",
+                  desc: "Post-lock CDISC implementation leads to expensive retrofitting and timeline overruns.",
+                },
+                {
+                  icon: <FileCheck size={20} />,
+                  title: "Missing Swiss Metadata",
+                  desc: "SNCTP identifiers, BASEC references, and multilingual data are frequently overlooked.",
+                },
               ].map((item, i) => (
                 <motion.div
                   key={item.title}
@@ -314,7 +391,9 @@ const SwissCdiscGuide = () => {
             <div className="grid lg:grid-cols-2 gap-6">
               {/* Traceability flow */}
               <div className="p-6 rounded-xl border border-border bg-card">
-                <h3 className="font-display text-xs uppercase tracking-wider text-muted-foreground mb-5">End-to-End Traceability</h3>
+                <h3 className="font-display text-xs uppercase tracking-wider text-muted-foreground mb-5">
+                  End-to-End Traceability
+                </h3>
                 <div className="flex flex-wrap items-center justify-center gap-2">
                   {["CRF", "SDTM", "ADaM", "TLF", "CSR"].map((step, i, arr) => (
                     <div key={step} className="flex items-center gap-2">
@@ -332,7 +411,9 @@ const SwissCdiscGuide = () => {
 
               {/* Timeline comparison */}
               <div className="p-6 rounded-xl border border-border bg-card">
-                <h3 className="font-display text-xs uppercase tracking-wider text-muted-foreground mb-5">Timeline Comparison</h3>
+                <h3 className="font-display text-xs uppercase tracking-wider text-muted-foreground mb-5">
+                  Timeline Comparison
+                </h3>
                 <div className="space-y-4">
                   <div>
                     <div className="flex items-center justify-between mb-1.5">
@@ -370,7 +451,10 @@ const SwissCdiscGuide = () => {
                   { label: "BASEC", desc: "Business Administration System for Ethics Committees" },
                   { label: "Multilingual", desc: "DE / FR / IT data" },
                 ].map((item) => (
-                  <span key={item.label} className="inline-flex items-center gap-1.5 text-[11px] bg-card border border-border rounded-full px-3 py-1.5 text-foreground">
+                  <span
+                    key={item.label}
+                    className="inline-flex items-center gap-1.5 text-[11px] bg-card border border-border rounded-full px-3 py-1.5 text-foreground"
+                  >
                     <span className="font-bold text-teal">{item.label}</span>
                     <span className="text-muted-foreground">{item.desc}</span>
                   </span>
@@ -448,13 +532,19 @@ const SwissCdiscGuide = () => {
             </motion.div>
 
             {/* Authority */}
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex flex-col justify-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="flex flex-col justify-center"
+            >
               <p className="text-xs uppercase tracking-[0.2em] text-teal font-semibold mb-3">About the Authors</p>
               <h2 className="font-display text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
                 Swiss CDISC Experts
               </h2>
               <p className="text-primary-foreground/60 text-sm leading-relaxed mb-6">
-                Datametrix AG is a Swiss-based CDISC Silver Partner specializing in SDTM, ADaM, define.xml, and Swissmedic submissions — combining global standards with Swiss regulatory precision.
+                Datametrix AG is a Swiss-based CDISC Silver Partner specializing in SDTM, ADaM, define.xml, and
+                Swissmedic submissions — combining global standards with Swiss regulatory precision.
               </p>
 
               <div className="grid grid-cols-3 gap-4">
@@ -463,7 +553,10 @@ const SwissCdiscGuide = () => {
                   { value: "50+", label: "Submissions" },
                   { value: "0", label: "Technical validation rejections" },
                 ].map((stat) => (
-                  <div key={stat.label} className="text-center p-3 rounded-lg border border-primary-foreground/10 bg-primary-foreground/5">
+                  <div
+                    key={stat.label}
+                    className="text-center p-3 rounded-lg border border-primary-foreground/10 bg-primary-foreground/5"
+                  >
                     <div className="text-xl font-display font-bold text-teal mb-0.5">{stat.value}</div>
                     <div className="text-[10px] text-primary-foreground/40">{stat.label}</div>
                   </div>
@@ -488,8 +581,8 @@ const SwissCdiscGuide = () => {
               Not sure if your study is submission-ready?
             </h2>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xl mx-auto mb-6">
-              Book a free 30-minute CDISC Readiness Assessment with our Swiss regulatory data specialists.
-              We'll review your current approach and identify potential gaps before they become costly.
+              Book a free 30-minute CDISC Readiness Assessment with our Swiss regulatory data specialists. We'll review
+              your current approach and identify potential gaps before they become costly.
             </p>
             <a
               href="https://calendly.com/datametrixag/30min"
@@ -517,9 +610,7 @@ const SwissCdiscGuide = () => {
               </p>
             </div>
 
-            <div className="max-w-md mx-auto">
-              {renderLeadForm({ containerRef: bottomFormRef, variant: "dark" })}
-            </div>
+            <div className="max-w-md mx-auto">{renderLeadForm({ containerRef: bottomFormRef, variant: "dark" })}</div>
           </motion.div>
         </div>
       </section>
@@ -532,7 +623,9 @@ const SwissCdiscGuide = () => {
       >
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="hidden sm:block">
-            <p className="text-primary-foreground font-display font-semibold text-sm">Swiss CDISC Submission Guide 2026</p>
+            <p className="text-primary-foreground font-display font-semibold text-sm">
+              Swiss CDISC Submission Guide 2026
+            </p>
             <p className="text-primary-foreground/50 text-[11px]">Free download · 19 pages</p>
           </div>
           <button
